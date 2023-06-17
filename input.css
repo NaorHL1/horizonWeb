@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Assistant";
+    src: url("fonts/Assistant.ttf") format('truetype');
+}
+
+.scrubText {
+    height: 170px;
+    margin-bottom: 155px;
+    opacity: 0;
+    transition: opacity 0.05s;
+    font-size: 75px;
+}
