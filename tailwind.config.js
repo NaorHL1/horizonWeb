@@ -3,6 +3,9 @@ module.exports = {
   content: ['./*.html'],
   theme: {
     extend: {
+      direction: {
+        'rtl': 'rtl',
+      },
       screens: {
         sm: '480px',
         md: '768px',
@@ -27,12 +30,16 @@ module.exports = {
         },
       },
       colors:{
-        black: '#080A09',
+        black: '#000000',
+        black2: '#080808',
+        black3: '#080A09',
         lightBlack: '#1E1E1E',
         cherry: '#D2042D',
+        lightGreen: '#00E498',
       },
       fontFamily: {
         Assistant: "Assistant",
+        Primary: "Assistant",
       },
     },
   },

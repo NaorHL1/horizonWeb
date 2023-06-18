@@ -14,3 +14,52 @@
     transition: opacity 0.05s;
     font-size: 75px;
 }
+
+.gradientText {
+    font-family: 'Assistant';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 130px;
+    margin-bottom: 180px;
+    
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.8) 9.37%, #777777 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.gradientBackground {
+    background: linear-gradient(180deg, #1A1B1D 0%, #1A1B1D 100%);
+  }
+
+.gradientLightGrey {
+    background: radial-gradient(35.31% 35.31% at 60.79% 41.81%, rgba(255, 255, 255, 0.8) 0%, #777777 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.gradientGrey {
+    background: radial-gradient(50% 50% at 50% 50%, #A1ACBE 0%, #A5B1C1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradientGreen {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(181, 255, 226, 0.69) 0%, #47BC8F 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.button {
+    font-family: 'Assistant';
+    font-style: bold;
+    width: 199px;
+    font-size: 20px;
+    height: 51px;
+    margin-top: 75px;
+    color: white;
+    border-radius: 15px;
+}
+  
