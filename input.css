@@ -4,9 +4,10 @@
 
 @font-face {
     font-family: "Assistant";
-    src: url("fonts/Assistant.ttf") format('truetype');
+    src: url("/css/fonts/Assistant.ttf") format('truetype');
     font-display: swap;
 }
+
 
 .scrubText {
     height: 170px;
