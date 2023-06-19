@@ -56,7 +56,6 @@
     font-size: 20px;
     height: 51px;
     margin-top: 75px;
-    color: white;
     border-radius: 15px;
 }
 
@@ -69,11 +68,10 @@
     background-size: cover;
   }
 
-
+  
   .slide {
     position: relative;
     overflow: hidden;
-    height: 100vh; 
   }
       .slide .pin-wrapper {
           width: 100%;
@@ -81,8 +79,6 @@
       }
       .slide .wrapper {
           position: absolute;
-          top: 45%;
-          left: 50%; 
       }
       .slide .img {
           position: absolute;
@@ -90,15 +86,28 @@
           left: 50%;
           width: 700px;
           height: 418px;
-          background: url(../img/img_macbook01.png) no-repeat top left;
+          background: url(img/img_macbook01.png) no-repeat top left;
           transform: translate(-80%, -40%); 
       }
+  
+  #slide02 .img {
+    background-image: url(img/img_macbook02.png);}
+  
+  #slide03 .img {
+    background-image: url(img/img_macbook01.png);}
+  
+  #slide04 .img {
+    background-image: url(img/img_macbook02.png);}
+  
+  #slide02 .pin-wrapper {
+      transform: translateY(-100%);
+  }
 
-      #slide02 .pin-wrapper {
-        transform: translateY(-100%);
-    }
-    .scrollmagic-pin-spacer {
-        position: absolute !important;
-        clip: rect(auto, auto, auto, auto);
-    }
-    
+  #slide03 .pin-wrapper {
+    transform: translateY(-200%);
+}
+
+  .scrollmagic-pin-spacer {
+      position: absolute !important;
+      clip: rect(auto, auto, auto, auto);
+  }

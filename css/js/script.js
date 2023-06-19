@@ -27,7 +27,7 @@ scrubTextElements.forEach((element) => {
       end: `+=${element.offsetHeight + 80}`,
       scrub: 0.5,
       toggleActions: "restart none none none",
-      markers: true,
+      markers: false,
       toggleClass: "red",
     }
   });
@@ -58,4 +58,15 @@ $(document).ready(function(){
 	.addTo(controller)
 	;
 
+  var pinScene03 = new ScrollMagic.Scene({
+		triggerElement: '#slide01',
+		triggerHook: 0,
+		duration: '300%'
+	})
+	.setPin('#slide03 .pin-wrapper')
+	.addTo(controller)
+	;
+
 });
+
+

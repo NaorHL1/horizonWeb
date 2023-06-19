@@ -653,12 +653,13 @@ video {
   background-color: rgb(0 228 152 / var(--tw-bg-opacity));
 }
 
-.bg-sea2 {
-  background-image: url("http://porschevolution.com/images/slides/2000.jpg");
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-sea3 {
-  background-image: url("http://porschevolution.com/images/slides/2010.jpg");
+.bg-gradientGrey {
+  background-image: linear-gradient(180deg, #1A1B1D 0%, #1A1B1D 100%);
 }
 
 .pb-4 {
@@ -811,7 +812,6 @@ video {
   font-size: 20px;
   height: 51px;
   margin-top: 75px;
-  color: white;
   border-radius: 15px;
 }
 
@@ -826,7 +826,6 @@ video {
 .slide {
   position: relative;
   overflow: hidden;
-  height: 100vh;
 }
 
 .slide .pin-wrapper {
@@ -836,8 +835,6 @@ video {
 
 .slide .wrapper {
   position: absolute;
-  top: 45%;
-  left: 50%;
 }
 
 .slide .img {
@@ -846,12 +843,28 @@ video {
   left: 50%;
   width: 700px;
   height: 418px;
-  background: url(../img/img_macbook01.png) no-repeat top left;
+  background: url(img/img_macbook01.png) no-repeat top left;
   transform: translate(-80%, -40%);
+}
+
+#slide02 .img {
+  background-image: url(img/img_macbook02.png);
+}
+
+#slide03 .img {
+  background-image: url(img/img_macbook01.png);
+}
+
+#slide04 .img {
+  background-image: url(img/img_macbook02.png);
 }
 
 #slide02 .pin-wrapper {
   transform: translateY(-100%);
+}
+
+#slide03 .pin-wrapper {
+  transform: translateY(-200%);
 }
 
 .scrollmagic-pin-spacer {
@@ -863,4 +876,3 @@ video {
   --tw-text-opacity: 1;
   color: rgb(210 4 45 / var(--tw-text-opacity));
 }
-    
