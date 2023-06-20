@@ -584,6 +584,10 @@ video {
   width: 83.333333%;
 }
 
+.w-screen {
+  width: 100vw;
+}
+
 .flex-row {
   flex-direction: row;
 }
