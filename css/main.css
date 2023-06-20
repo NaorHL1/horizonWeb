@@ -534,10 +534,6 @@ video {
   top: 1rem;
 }
 
-.z-10 {
-  z-index: 10;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -586,10 +582,6 @@ video {
 
 .w-10\/12 {
   width: 83.333333%;
-}
-
-.w-screen {
-  width: 100vw;
 }
 
 .flex-row {
@@ -695,6 +687,11 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .font-bold {
@@ -869,6 +866,16 @@ video {
   border-radius: 15px;
 }
 
+@media (max-width: 768px) {
+  .button{
+    width: 108px;
+    font-size: 15px;
+    height: 34px;
+    margin-top: 50px;
+    border-radius: 12px;
+  }
+}
+
 .parallax {
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -950,6 +957,11 @@ video {
 
   .md\:text-6xl {
     font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .md\:text-5xl {
+    font-size: 3rem;
     line-height: 1;
   }
 }
