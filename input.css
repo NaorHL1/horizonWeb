@@ -58,23 +58,18 @@
 }
 
 
-
-
-
 .scrubText {
     height: 170px;
     margin-bottom: 155px;
     opacity: 0;
     transition: opacity 0.05s;
-    font-size: 75px;
 }
 
 .gradientText {
     font-family: 'Assistant';
     font-style: normal;
     font-weight: 700;
-    font-size: 100px;
-    line-height: 130px;
+    line-height: 50px;
     margin-bottom: 180px;
     
     background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.8) 9.37%, #777777 100%);
