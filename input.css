@@ -170,10 +170,14 @@
   
   #slide02 .pin-wrapper {
       transform: translateY(-100%);
+      -webkit-perspective: 1000;
+      -webkit-backface-visibility: hidden;
   }
 
   #slide03 .pin-wrapper {
     transform: translateY(-200%);
+    -webkit-perspective: 1000;
+    -webkit-backface-visibility: hidden;
 }
 
   .scrollmagic-pin-spacer {
