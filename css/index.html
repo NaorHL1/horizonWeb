@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="main.css" rel="stylesheet">
+  <link rel="preload" as="font" href="fonts/Assistant.ttf" type="font/ttf" crossorigin="anonymous">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
-  <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 </head>
 <body>
     <!-- Header Container -->
@@ -72,15 +72,16 @@
     <!-- Section 3 -->
     <section class="">
     </section>
+    <!-- div with slide animation for md screen and above -->
     <div id="main" class="main-container">
-        <div id="slide01" class="slide bg-gradientGrey h-screen">
+        <div id="slide01" class="slide bg-gradientGrey h-screen w-screen">
             <div class="pin-wrapper">
                 <!-- <div class="img"></div> -->
                     <div class="flex flex-col w-10/12 items-end text-right mx-auto">
-                        <p class="font-Assistant font-semibold text-5xl leading-tight text-white mt-32">מוכן לראות
+                        <p class="font-Assistant font-semibold text-3xl md:text-5xl leading-tight text-white mt-32">מוכן לראות
                         <br>את <span class="gradientGrey">האפליקציה שלך</span>
                         <br>בעיצוב המדוייק לעסק שלך</p>
-                        <p class="font-Assistant font-normal leading-9 text-white mt-8 text-2xl">
+                        <p class="font-Assistant font-normal leading-9 text-white mt-8 text-xl md:text-2xl">
                             <bdi>איפיון ועיצוב אפליקציה בצורה יסודית יאפשרו<br>להגשים את יעדי המוצר תוך התחשבות במשתמשים<br>
                              ובמודל העסקי ברמת UX/UI הגבוהה ביותר!</bdi>
                         </p>
@@ -90,14 +91,14 @@
             </div>
         </div>
 
-        <div id="slide02" class="slide bg-white h-screen">
+        <div id="slide02" class="slide bg-white h-screen w-screen">
             <div class="pin-wrapper">
                 <!-- <div class="img"></div> -->
                     <div class="flex flex-col w-10/12 items-end text-right mx-auto">
-                    <p class="font-Assistant font-semibold text-5xl leading-tight text-black mt-32">מוכן לראות
+                    <p class="font-Assistant font-semibold text-3xl md:text-5xl leading-tight text-black mt-32">מוכן לראות
                     <br>את <span class="gradientLightGrey">המיתוג שלך</span>
                     <br>בעיצוב המדוייק לעסק שלך</p>
-                    <p class="font-Assistant font-normal leading-9 text-black mt-8 text-2xl">
+                    <p class="font-Assistant font-normal leading-9 text-black mt-8 text-xl md:text-2xl">
                         <bdi>מיתוג זה יצירת זהות, זו אמירה, זו היכולת<br> 
                         לשדר משהו ללקוח ולהצטייר בפניו כמשהו<br> 
                         גדול ורציני, כזה שגם יוצר תחושת שייכות
@@ -109,14 +110,14 @@
                 </div>
         </div>
         
-        <div id="slide03" class="slide bg-black h-screen">
+        <div id="slide03" class="slide bg-black h-screen w-screen">
             <div class="pin-wrapper">
                 <!-- <div class="img"></div> -->
                     <div class="flex flex-col w-10/12 items-end text-right mx-auto">
-                    <p class="font-Assistant font-semibold text-5xl leading-tight text-white mt-32">מוכן לראות
+                    <p class="font-Assistant font-semibold text-3xl md:text-5xl leading-tight text-white mt-32">מוכן לראות
                     <br>את <span class="gradientGreen">האתר|דף נחיתה שלך</span>
                     <br>בעיצוב המדוייק לעסק שלך</p>
-                    <p class="font-Assistant font-normal leading-9 text-white mt-8 text-2xl">
+                    <p class="font-Assistant font-normal leading-9 text-white mt-8 text-xl md:text-2xl">
                         <bdi>תכנון ועיצוב אתר דורשים מחקר שוק, יצירתיות<br>ויכולת חשיבה עמוקה ביותר על מנת להגשים<br>את היעדים בעולם בו כולם זהים</bdi>
                     </p>
                     <!-- I am Ready Button -->

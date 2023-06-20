@@ -576,12 +576,12 @@ video {
   height: 100vh;
 }
 
-.min-h-screen {
-  min-height: 100vh;
-}
-
 .w-10\/12 {
   width: 83.333333%;
+}
+
+.w-screen {
+  width: 100vw;
 }
 
 .flex-row {
