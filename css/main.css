@@ -522,6 +522,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .relative {
   position: relative;
 }
@@ -932,6 +936,10 @@ video {
 @media (min-width: 768px) {
   .md\:block {
     display: block;
+  }
+
+  .md\:flex {
+    display: flex;
   }
 
   .md\:hidden {
