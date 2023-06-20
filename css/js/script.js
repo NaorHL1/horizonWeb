@@ -24,7 +24,7 @@ scrubTextElements.forEach((element) => {
     scrollTrigger: {
       trigger: element,
       start: "top 70%",
-      end: `+=${element.offsetHeight + 80}`,
+      end: `+=${element.offsetHeight + 50}`,
       scrub: 0.5,
       toggleActions: "restart none none none",
       markers: false,

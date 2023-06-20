@@ -814,6 +814,12 @@ video {
   transition: opacity 0.05s;
 }
 
+@media (max-width: 768px) {
+  .scrubText{
+    margin-bottom: 50px;
+  }
+}
+
 .gradientText {
   font-family: 'Assistant';
   font-style: normal;
