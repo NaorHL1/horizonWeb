@@ -876,6 +876,7 @@ video {
 }
 
 .slide {
+  position: relative;
   overflow: hidden;
 }
 

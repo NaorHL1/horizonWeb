@@ -139,6 +139,7 @@
 
   
   .slide {
+    position: relative;
     overflow: hidden;
   }
       .slide .pin-wrapper {
