@@ -559,28 +559,12 @@ video {
   margin-top: 2rem !important;
 }
 
-.mt-\[30\] {
-  margin-top: 30 !important;
-}
-
-.mt-\[50\] {
-  margin-top: 50 !important;
-}
-
-.mt-\[30px\] {
-  margin-top: 30px !important;
+.mt-\[27px\] {
+  margin-top: 27px !important;
 }
 
 .mt-\[50px\] {
   margin-top: 50px !important;
-}
-
-.mt-\[28px\] {
-  margin-top: 28px !important;
-}
-
-.mt-\[27px\] {
-  margin-top: 27px !important;
 }
 
 .flex {
@@ -654,6 +638,11 @@ video {
 .bg-white {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
+}
+
+.bg-clearWhite {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(243 243 243 / var(--tw-bg-opacity)) !important;
 }
 
 .bg-gradientGrey {
