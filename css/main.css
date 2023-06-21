@@ -714,6 +714,10 @@ video {
   line-height: 1.25 !important;
 }
 
+.leading-6 {
+  line-height: 1.5rem !important;
+}
+
 .text-black {
   --tw-text-opacity: 1 !important;
   color: rgb(0 0 0 / var(--tw-text-opacity)) !important;
