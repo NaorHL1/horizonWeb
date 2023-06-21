@@ -860,6 +860,14 @@ video {
     margin-top: 1.5rem !important;
   }
 
+  .md\:mt-12 {
+    margin-top: 3rem !important;
+  }
+
+  .md\:mt-20 {
+    margin-top: 5rem !important;
+  }
+
   .md\:block {
     display: block !important;
   }
