@@ -886,6 +886,18 @@ video {
     line-height: 1;
   }
 
+  .md\:font-bold {
+    font-weight: 700;
+  }
+
+  .md\:font-extrabold {
+    font-weight: 800;
+  }
+
+  .md\:font-semibold {
+    font-weight: 600;
+  }
+
   .md\:leading-9 {
     line-height: 2.25rem;
   }

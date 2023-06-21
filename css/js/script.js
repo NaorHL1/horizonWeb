@@ -40,7 +40,7 @@ scrubTextElements.forEach((element) => {
 		var pinScene01 = new ScrollMagic.Scene({
 			triggerElement: '#slide01',
 			triggerHook: 0,
-			duration: 1000
+			duration: 2000
 		})
 		.setPin('#slide01 .pin-wrapper')
 		.addTo(controller)
@@ -50,7 +50,7 @@ scrubTextElements.forEach((element) => {
 		var pinScene02 = new ScrollMagic.Scene({
 			triggerElement: '#slide01',
 			triggerHook: 0,
-			duration: 2000
+			duration: 4000
 		})
 		.setPin('#slide02 .pin-wrapper')
 		.addTo(controller)
@@ -59,7 +59,7 @@ scrubTextElements.forEach((element) => {
 	  var pinScene03 = new ScrollMagic.Scene({
 			triggerElement: '#slide01',
 			triggerHook: 0,
-			duration: 3000
+			duration: 6000
 		})
 		.setPin('#slide03 .pin-wrapper')
 		.addTo(controller)
