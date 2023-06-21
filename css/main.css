@@ -864,6 +864,10 @@ video {
     display: block !important;
   }
 
+  .md\:inline {
+    display: inline !important;
+  }
+
   .md\:flex {
     display: flex !important;
   }
