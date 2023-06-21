@@ -817,9 +817,6 @@ video {
 
 .slide .wrapper {
   position: absolute;
-  justify-items: center;
-  justify-content: center;
-  justify-self: center;
 }
 
 .slide .img {

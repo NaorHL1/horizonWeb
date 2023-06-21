@@ -37,6 +37,7 @@ $(document).ready(function(){
 
 	var controller = new ScrollMagic.Controller();
 
+	if (screen.width <768) {
 	var pinScene01 = new ScrollMagic.Scene({
 		triggerElement: '#slide01',
 		triggerHook: 0,
@@ -64,7 +65,10 @@ $(document).ready(function(){
 	.setPin('#slide03 .pin-wrapper')
 	.addTo(controller)
 	;
+}
+else{
+	
+}
 
 });
-
 
