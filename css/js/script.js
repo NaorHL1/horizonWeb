@@ -33,9 +33,6 @@ scrubTextElements.forEach((element) => {
   });
 });
 
-var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-
-if (!isMobile) {
 	$(document).ready(function(){
 
 		var controller = new ScrollMagic.Controller();
@@ -68,10 +65,6 @@ if (!isMobile) {
 		.addTo(controller)
 		;
 	
-	});
-} else {
-  // Mobile-specific code or alternative behavior
-}
-
+});
 
 
