@@ -853,6 +853,10 @@ video {
   .sm\:mt-8 {
     margin-top: 2rem !important;
   }
+
+  .sm\:mt-7 {
+    margin-top: 1.75rem !important;
+  }
 }
 
 @media (min-width: 768px) {
