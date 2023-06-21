@@ -43,7 +43,7 @@ if (!isMobile) {
 		var pinScene01 = new ScrollMagic.Scene({
 			triggerElement: '#slide01',
 			triggerHook: 0,
-			duration: '100%'
+			duration: 1000
 		})
 		.setPin('#slide01 .pin-wrapper')
 		.addTo(controller)
@@ -53,7 +53,7 @@ if (!isMobile) {
 		var pinScene02 = new ScrollMagic.Scene({
 			triggerElement: '#slide01',
 			triggerHook: 0,
-			duration: '200%'
+			duration: 2000
 		})
 		.setPin('#slide02 .pin-wrapper')
 		.addTo(controller)
@@ -62,7 +62,7 @@ if (!isMobile) {
 	  var pinScene03 = new ScrollMagic.Scene({
 			triggerElement: '#slide01',
 			triggerHook: 0,
-			duration: '300%'
+			duration: 3000
 		})
 		.setPin('#slide03 .pin-wrapper')
 		.addTo(controller)
