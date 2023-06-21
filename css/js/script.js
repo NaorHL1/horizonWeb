@@ -33,38 +33,45 @@ scrubTextElements.forEach((element) => {
   });
 });
 
-$(document).ready(function(){
+var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
-	var controller = new ScrollMagic.Controller();
+if (!isMobile) {
+	$(document).ready(function(){
 
-	var pinScene01 = new ScrollMagic.Scene({
-		triggerElement: '#slide01',
-		triggerHook: 0,
-		duration: '100%'
-	})
-	.setPin('#slide01 .pin-wrapper')
-	.addTo(controller)
-	;
+		var controller = new ScrollMagic.Controller();
+	
+		var pinScene01 = new ScrollMagic.Scene({
+			triggerElement: '#slide01',
+			triggerHook: 0,
+			duration: '100%'
+		})
+		.setPin('#slide01 .pin-wrapper')
+		.addTo(controller)
+		;
+	
+		// Scene 2 - pin the third section
+		var pinScene02 = new ScrollMagic.Scene({
+			triggerElement: '#slide01',
+			triggerHook: 0,
+			duration: '200%'
+		})
+		.setPin('#slide02 .pin-wrapper')
+		.addTo(controller)
+		;
+	
+	  var pinScene03 = new ScrollMagic.Scene({
+			triggerElement: '#slide01',
+			triggerHook: 0,
+			duration: '300%'
+		})
+		.setPin('#slide03 .pin-wrapper')
+		.addTo(controller)
+		;
+	
+	});
+} else {
+  // Mobile-specific code or alternative behavior
+}
 
-	// Scene 2 - pin the third section
-	var pinScene02 = new ScrollMagic.Scene({
-		triggerElement: '#slide01',
-		triggerHook: 0,
-		duration: '200%'
-	})
-	.setPin('#slide02 .pin-wrapper')
-	.addTo(controller)
-	;
-
-  var pinScene03 = new ScrollMagic.Scene({
-		triggerElement: '#slide01',
-		triggerHook: 0,
-		duration: '300%'
-	})
-	.setPin('#slide03 .pin-wrapper')
-	.addTo(controller)
-	;
-
-});
 
 
