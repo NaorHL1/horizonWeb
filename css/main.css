@@ -644,10 +644,6 @@ video {
   padding-bottom: 10rem;
 }
 
-.pt-10 {
-  padding-top: 2.5rem;
-}
-
 .pt-6 {
   padding-top: 1.5rem;
 }
@@ -880,7 +876,6 @@ video {
 }
 
 .slide {
-  position: relative;
   overflow: hidden;
 }
 
