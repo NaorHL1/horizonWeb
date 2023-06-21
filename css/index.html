@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="main.css" rel="stylesheet">
+  <link rel="preload" as="font" href="fonts/Assistant.ttf" type="font/ttf" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Header Container -->
+    <header>
+    <div class="hidden md:flex flex-row justify-center text-xl text-lightBlack font-Assistant gap-20 pt-6 pb-4 h-fit">
+        <!-- Logo -->
+        <div class="fixed font-normal text-4xl left-8 top-4">
+        <!-- <img src="" alt=""> -->
+        <p>HORIZON</p>
+        </div>
+        <a class="" href="#">צרו קשר</a>
+        <a class="" href="#">מיתוג</a>
+        <a class="" href="#">אפליקציות</a>
+        <a class="" href="#">אתרים</a>
+        <a class="" href="#">דף הבית</a>
+        </div>
+    </div>
+    <!-- Mobile Navigation -->
+    <!-- <div class="mobile-nav">
+        <nav>
+            <ul class="mobile-navmenu">
+                <li>
+                    <a href="#" class="mobile-navlink">צרו קשר</a>
+                </li>
+                <li>
+                    <a href="#" class="mobile-navlink">מיתוג</a>
+                </li>
+                <li>
+                    <a href="#" class="mobile-navlink">אפליקציות</a>
+                </li>
+                <li>
+                    <a href="#" class="mobile-navlink">אתרים</a>
+                </li>
+                <li>
+                    <a href="#" class="mobile-navlink">דף הבית</a>
+                </li>
+            </ul>
+        </nav>
+    </div> -->
+    </header>
+    <!-- First Section -->
+    <section>
+    <div class="flex flex-col items-center justify-center font-Assistant text-black3 pb-40 h-screen">
+        <!-- Title -->
+        <h1 class="font-bold text-4xl md:text-6xl lg:text-8xl"> עיצוב גרפי</h1>
+        <h1 class="font-semibold text-4xl text-center md:text-6xl lg:text-8xl">בניית אתרים ואפליקציות</h1>
+        <h1 class="font-normal text-4xl md:text-6xl lg:text-8xl">מיתוג מנצח</h1>
+        <!-- Paragraph md screen and above -->
+        <p class="text-xl md:text-2xl lg:text-3xl text-center font-normal mt-4 hidden md:block">אם אתם מחפשים אתר | אפליקציה | מיתוג מיוחד לא משהו שקיים בשוק
+            <br>כזה שישאיר חותם והלקוחות לא ישכחו אותו הגעתם למקום הנכון<br>(: HORIZON נעים להכיר</p>
+        <!-- Paragraph sm screen -->
+        <p class="text-xl md:text-2xl lg:text-3xl text-center font-normal mt-2.5 md:hidden">
+            <bdi>אם אתם מחפשים אתר | אפליקציה |
+                <br>מיתוג מיוחד לא משהו שקיים בשוק<br>
+                כזה שישאיר חותם והלקוחות לא ישכחו<br>אותו הגעתם למקום הנכון<br>
+                נעים להכיר HORIZON :)</bdi>
+        </p>
+    </section>
+    <!-- Section 2 -->
+    <div class="bg-black2 flex justify-center h-fit">
+        <!-- md screen and above -->
+          <div class="font-semifold font-Assistant text-white text-center hidden md:flex flex-col justify-around text-4xl md:text-6xl lg:text-7xl">
+            <p class="scrubText mt-2 md:mt-6 lg:mt-8">עיצוב חווית משתמש מנצח<br>בהתאמה אישית וסקיילבילית</p>
+            <p class="scrubText">תכנון ועיצוב אתר ע”י הכרת השוק,<br>מתוך מחשבה על הגשמת היעדים</p>
+            <p class="scrubText">מיתוג נכון ומדוייק שימשוך<br>את קהל היעד באופן ספציפי</p>
+            <p class="scrubText"><bdi>איפיון ועיצוב אפליקציה ברמה המקצועית<br>ביותר, עד לפרטים הקטנים!</bdi></p>
+            <p class="scrubText">לפרוץ את מחסום ההפרדה ביניכם<br>לבין הלקוחות הפוטנציאלים</p>
+            <p class="scrubText"><bdi>קחו את העסק שלכם כמה צעדים קדימה!</bdi></p>
+            <!-- Gradient Text -->
+            <h1 class="gradientText scrubText text-7xl lg:text-8xl">אין שני לרושם ראשוני</h1>
+          </div>
+        <!-- sm screen -->
+        <div class="font-semifold font-Assistant text-white text-center flex md:hidden flex-col justify-around text-4xl">
+            <p class="scrubText mt-2 md:mt-6 lg:mt-8">עיצוב חווית משתמש מנצח<br> בהתאמה אישית<br> וסקיילבילית</p>
+            <p class="scrubText">תכנון ועיצוב אתר ע”י<br> הכרת השוק,מתוך<br> מחשבה על הגשמת היעדים
+            <p class="scrubText">מיתוג נכון ומדוייק<br> שימשוך את קהל היעד<br> באופן ספציפי
+            <p class="scrubText"><bdi>איפיון ועיצוב אפליקציה<br> ברמה המקצועית ביותר,<br> עד לפרטים הקטנים!</bdi></p>
+            <p class="scrubText">לפרוץ את מחסום ההפרדה<br> ביניכם לבין הלקוחות<br> הפוטנציאלים</p>
+            <p class="scrubText"><bdi>קחו את העסק שלכם כמה<br> צעדים קדימה!</bdi></p>
+            <!-- Gradient Text -->
+            <h1 class="gradientText scrubText text-5xl">אין שני לרושם<br>ראשוני</h1>
+          </div>
+    </div>
+    </section>
+    <!-- Section 3 -->
+    <section class="">
+    </section>
+    <!-- div with slide animation -->
+    <div id="main" class="main-container">
+        <div id="slide01" class="slide bg-gradientGrey h-screen w-screen">
+            <div class="pin-wrapper">
+                <!-- <div class="img"></div> -->
+                    <div class="flex flex-col w-11/12 md:w-10/12 items-end text-right mx-auto">
+                        <p class="font-Assistant font-semibold text-3xl md:text-5xl leading-tight text-white mt-32">מוכן לראות
+                        <br>את <span class="gradientGrey">האפליקציה שלך</span>
+                        <br>בעיצוב המדוייק לעסק שלך</p>
+                        <p class="font-Assistant font-normal leading-5 md:leading-9 text-white mt-8 text-xl md:text-2xl">
+                            <bdi>איפיון ועיצוב אפליקציה בצורה יסודית יאפשרו<br>להגשים את יעדי המוצר תוך התחשבות במשתמשים<br>
+                             ובמודל העסקי ברמת UX/UI הגבוהה ביותר!</bdi>
+                        </p>
+                        <!-- I am Ready Button -->
+                        <button href="#" class="button bg-white text-black">אני מוכן</button>
+                    </div>
+            </div>
+        </div>
+
+        <div id="slide02" class="slide bg-white h-screen w-screen">
+            <div class="pin-wrapper">
+                <!-- <div class="img"></div> -->
+                    <div class="flex flex-col w-11/12 md:w-10/12 items-end text-right mx-auto">
+                    <p class="font-Assistant font-semibold text-3xl md:text-5xl leading-tight text-black mt-32">מוכן לראות
+                    <br>את <span class="gradientLightGrey">המיתוג שלך</span>
+                    <br>בעיצוב המדוייק לעסק שלך</p>
+                    <p class="font-Assistant font-normal leading-5 md:leading-9 text-black mt-8 text-xl md:text-2xl">
+                        <bdi>מיתוג זה יצירת זהות, זו אמירה, זו היכולת<br> 
+                        לשדר משהו ללקוח ולהצטייר בפניו כמשהו<br> 
+                        גדול ורציני, כזה שגם יוצר תחושת שייכות
+                        </bdi>
+                    </p>
+                    <!-- I am Ready Button -->
+                    <button  class="button bg-black text-white">אני מוכן</button>
+                    </div>
+                </div>
+        </div>
+        
+        <div id="slide03" class="slide bg-black h-screen w-screen">
+            <div class="pin-wrapper">
+                <!-- <div class="img"></div> -->
+                    <div class="flex flex-col w-11/12 md:w-10/12 items-end text-right mx-auto">
+                    <p class="font-Assistant font-semibold text-3xl md:text-5xl leading-tight text-white mt-32">מוכן לראות
+                    <br>את <span class="gradientGreen">האתר|דף נחיתה שלך</span>
+                    <br>בעיצוב המדוייק לעסק שלך</p>
+                    <p class="font-Assistant font-normal leading-5 md:leading-9 text-white mt-8 text-xl md:text-2xl">
+                        <bdi>תכנון ועיצוב אתר דורשים מחקר שוק, יצירתיות<br>ויכולת חשיבה עמוקה ביותר על מנת להגשים<br>את היעדים בעולם בו כולם זהים</bdi>
+                    </p>
+                    <!-- I am Ready Button -->
+                    <button href="#" class="button text-white bg-lightGreen">אני מוכן</button>
+                    </div>
+                </div>
+        </div>
+        <div class="bg-white h-screen slide">
+            <div class="wrapper">
+            </div> <!-- .wrapper -->
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+    <script>
+        ScrollReveal({ reset: true });
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>
