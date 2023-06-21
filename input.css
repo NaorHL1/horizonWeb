@@ -148,6 +148,7 @@
       }
       .slide .wrapper {
           position: absolute;
+          justify-self: center;
       }
       .slide .img {
           position: absolute;
