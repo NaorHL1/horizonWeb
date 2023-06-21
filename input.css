@@ -9,7 +9,6 @@
 }
 
 
-
 .scrubText {
     height: 170px;
     margin-bottom: 155px;
@@ -114,14 +113,6 @@
           transform: translate(-80%, -40%); 
       }
   
-  #slide02 .img {
-    background-image: url(img/img_macbook02.png);}
-  
-  #slide03 .img {
-    background-image: url(img/img_macbook01.png);}
-  
-  #slide04 .img {
-    background-image: url(img/img_macbook02.png);}
   
   #slide02 .pin-wrapper {
       transform: translateY(-100%);
