@@ -920,7 +920,7 @@ video {
 }
 
 #slide03 .pin-wrapper {
-  transform: translateY(-100%);
+  transform: translateY(-200%);
 }
 
 .scrollmagic-pin-spacer {
