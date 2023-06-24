@@ -546,6 +546,26 @@ video {
   top: 1rem !important;
 }
 
+.left-0 {
+  left: 0px !important;
+}
+
+.top-0 {
+  top: 0px !important;
+}
+
+.left-\[1\%\] {
+  left: 1% !important;
+}
+
+.top-\[1\%\] {
+  top: 1% !important;
+}
+
+.left-\[99\%\] {
+  left: 99% !important;
+}
+
 .z-\[999\] {
   z-index: 999 !important;
 }
@@ -720,6 +740,10 @@ video {
 
 .p-4 {
   padding: 1rem !important;
+}
+
+.p-2 {
+  padding: 0.5rem !important;
 }
 
 .pb-4 {
