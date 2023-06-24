@@ -8,13 +8,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
 </head>
-<body>
+<body class="bg-clearWhite">
     <!-- Header Container -->
     <header>
     <div class="hidden md:flex flex-row justify-center text-xl bg-clearWhite text-lightBlack font-Assistant gap-20 pt-6 pb-4 h-fit">
         <!-- Logo -->
         <div class="fixed font-normal text-4xl left-8 top-4">
-        <!-- <img src="" alt=""> -->
+        <img src="" alt="">
         <p>HORIZON</p>
         </div>
         <a class="" href="#">צרו קשר</a>
@@ -24,28 +24,35 @@
         <a class="" href="#">דף הבית</a>
         </div>
     </div>
-    <!-- Mobile Navigation -->
-    <div class="mobile-nav">
-        <nav>
-            <ul class="mobile-navmenu">
-                <li>
-                    <a href="#" class="mobile-navlink">צרו קשר</a>
-                </li>
-                <li>
-                    <a href="#" class="mobile-navlink">מיתוג</a>
-                </li>
-                <li>
-                    <a href="#" class="mobile-navlink">אפליקציות</a>
-                </li>
-                <li>
-                    <a href="#" class="mobile-navlink">אתרים</a>
-                </li>
-                <li>
-                    <a href="#" class="mobile-navlink">דף הבית</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-end mx-auto p-4">
+        <button data-collapse-toggle="navbar-default" type="button" class="header__bars z-[999] inline-flex items-center p-1 text-black rounded-lg md:hidden" aria-controls="navbar-default" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+        </button>
+ <!-- Mobile Navigation -->
+ <div class="mobile-nav">
+  <nav>
+    <ul class="mobile-nav__menu">
+      <li>
+        <a class="mobile-nav__link" href="#home">דף הבית</a>
+      </li>
+      <li>
+        <a class="mobile-nav__link" href="#websites">אתרים</a>
+      </li>
+      <li>
+        <a class="mobile-nav__link" href="#apps">אפליקציות</a>
+      </li>
+      <li>
+        <a class="mobile-nav__link" href="#branding">מיתוג</a>
+      </li>
+      <li class=""></li>
+      <li>
+        <a class="mobile-nav__btn btn" href="#">צרו קשר</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<!-- End of Mobile Navigation -->
     </header>
     <!-- First Section -->
     <section>
