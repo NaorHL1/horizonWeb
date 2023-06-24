@@ -46,7 +46,7 @@ module.exports = {
         cream1: '#CECECE',
         cream2: '#D2D2D2',
         cream3: '#D5D5D5',
-        navy: '#1e1e24',
+        bgblack: '#000000',
         lightBlack: '#1E1E1E',
         cherry: '#D2042D',
         lightGreen: '#00E498',
