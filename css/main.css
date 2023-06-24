@@ -704,7 +704,7 @@ video {
 
 .bg-navy {
   --tw-bg-opacity: 1 !important;
-  background-color: rgb(7 11 21 / var(--tw-bg-opacity)) !important;
+  background-color: rgb(115 147 179 / var(--tw-bg-opacity)) !important;
 }
 
 .bg-white {
@@ -838,7 +838,7 @@ video {
 
 .text-navy {
   --tw-text-opacity: 1 !important;
-  color: rgb(7 11 21 / var(--tw-text-opacity)) !important;
+  color: rgb(115 147 179 / var(--tw-text-opacity)) !important;
 }
 
 .text-white {
