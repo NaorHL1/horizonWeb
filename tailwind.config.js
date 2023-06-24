@@ -44,6 +44,7 @@ module.exports = {
         lightBlack: '#1E1E1E',
         cherry: '#D2042D',
         lightGreen: '#00E498',
+        grey: '#696969',
       },
       fontFamily: {
         Assistant: "Assistant",

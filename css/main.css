@@ -799,22 +799,6 @@ video {
   line-height: 1.25 !important;
 }
 
-.leading-4 {
-  line-height: 1rem !important;
-}
-
-.leading-8 {
-  line-height: 2rem !important;
-}
-
-.leading-normal {
-  line-height: 1.5 !important;
-}
-
-.leading-10 {
-  line-height: 2.5rem !important;
-}
-
 .text-black {
   --tw-text-opacity: 1 !important;
   color: rgb(0 0 0 / var(--tw-text-opacity)) !important;
@@ -823,6 +807,11 @@ video {
 .text-black3 {
   --tw-text-opacity: 1 !important;
   color: rgb(8 10 9 / var(--tw-text-opacity)) !important;
+}
+
+.text-grey {
+  --tw-text-opacity: 1 !important;
+  color: rgb(105 105 105 / var(--tw-text-opacity)) !important;
 }
 
 .text-lightBlack {
