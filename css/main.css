@@ -697,6 +697,11 @@ video {
   background-color: rgb(243 243 243 / var(--tw-bg-opacity)) !important;
 }
 
+.bg-cream2 {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(210 210 210 / var(--tw-bg-opacity)) !important;
+}
+
 .bg-lightGreen {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(0 228 152 / var(--tw-bg-opacity)) !important;
@@ -704,7 +709,7 @@ video {
 
 .bg-navy {
   --tw-bg-opacity: 1 !important;
-  background-color: rgb(115 147 179 / var(--tw-bg-opacity)) !important;
+  background-color: rgb(30 30 36 / var(--tw-bg-opacity)) !important;
 }
 
 .bg-white {
@@ -838,7 +843,7 @@ video {
 
 .text-navy {
   --tw-text-opacity: 1 !important;
-  color: rgb(115 147 179 / var(--tw-text-opacity)) !important;
+  color: rgb(30 30 36 / var(--tw-text-opacity)) !important;
 }
 
 .text-white {
@@ -888,7 +893,7 @@ video {
   background-color: #333;
   color: #fff;
   text-align: center;
-  transition: top 0.8s ease, opacity 0.8s ease;
+  transition: top 1.2s ease, opacity 1.2s ease;
 }
 
 .Nav_Container.active {
