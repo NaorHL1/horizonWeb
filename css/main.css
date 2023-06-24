@@ -653,7 +653,7 @@ video {
 }
 
 .animate-fallFromTop {
-  animation: fallFromTop 1s ease-in-out !important;
+  animation: fallFromTop 1.2s ease-in-out !important;
 }
 
 .flex-col {
@@ -846,20 +846,8 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
 
-.delay-150 {
-  transition-delay: 150ms !important;
-}
-
-.animation-delay-75 {
-  animation-delay: 75ms !important;
-}
-
 .animation-delay-100 {
   animation-delay: 100ms !important;
-}
-
-.animation-delay-150 {
-  animation-delay: 150ms !important;
 }
 
 .animation-delay-200 {

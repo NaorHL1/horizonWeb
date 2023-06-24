@@ -22,7 +22,7 @@ module.exports = {
       animation: {
         fadeIn: "fadeIn 1.5s ease-in forwards",
         fadeOut: "fadeOut 1.5s 1s ease-out forwards",
-        fallFromTop: 'fallFromTop 1s ease-in-out',
+        fallFromTop: 'fallFromTop 1.2s ease-in-out',
         variants: {
           animation: ["motion-safe"]
       }
