@@ -566,6 +566,10 @@ video {
   left: 99% !important;
 }
 
+.right-\[1\%\] {
+  right: 1% !important;
+}
+
 .z-\[999\] {
   z-index: 999 !important;
 }
