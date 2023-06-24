@@ -13,10 +13,12 @@ const mobileNav = () => {
 		mobileNav.style.display = 'flex';
 		document.body.style.overflowY = 'hidden';
 		document.body.style.position = 'fixed';
+		document.body.style.backgroundColor = 'white'
 	  } else {
 		mobileNav.style.display = 'none';
 		document.body.style.overflowY = 'auto';
 		document.body.style.position = 'static';
+		document.body.style.backgroundColor = 'initial'
 	  }
 	});
   
