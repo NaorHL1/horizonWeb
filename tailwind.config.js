@@ -22,6 +22,7 @@ module.exports = {
       animation: {
         fadeIn: "fadeIn 1.5s ease-in forwards",
         fadeOut: "fadeOut 1.5s 1s ease-out forwards",
+        fallFromTop: 'fallFromTop 1s ease-in-out',
         variants: {
           animation: ["motion-safe"]
       }
@@ -35,12 +36,17 @@ module.exports = {
           "0%": { opacity: 1 },
           "100%": { opacity: 0 }
         },
+        fallFromTop: {
+          '0%': { transform: 'translateY(-100%)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
       },
       colors:{
         clearWhite: '#f3f3f3',
-        black: '#000000',
-        black2: '#080808',
-        black3: '#080A09',
+        cream1: '#CECECE',
+        cream2: '#D2D2D2',
+        cream3: '#D5D5D5',
+        dark: '#080A09',
         lightBlack: '#1E1E1E',
         cherry: '#D2042D',
         lightGreen: '#00E498',
@@ -52,6 +58,8 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require("tailwindcss-animation-delay"),
+  ],
 }
 

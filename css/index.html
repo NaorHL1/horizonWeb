@@ -8,21 +8,23 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
 </head>
-<body class="bg-clearWhite">
+<body class="bg-dark">
     <!-- Header Container -->
     <header>
-    <div class="hidden md:flex flex-row justify-center text-xl bg-clearWhite text-lightBlack font-Assistant gap-20 pt-6 pb-4 h-fit">
+    <!-- Nav Container -->
+    <div class="Nav_Container hidden md:flex w-screen bg-dark items-center">
+    <!-- Nav Menu -->
+      <div class="flex flex-1 text-grey mx-auto px-[30px] py-[20px] relative max-w-[1400px]">
         <!-- Logo -->
-        <div class="fixed font-normal text-4xl left-8 top-4">
-        <img src="" alt="">
-        <p>HORIZON</p>
-        </div>
-        <a class="" href="#">צרו קשר</a>
-        <a class="" href="#">מיתוג</a>
-        <a class="" href="#">אפליקציות</a>
-        <a class="" href="#">אתרים</a>
-        <a class="" href="#">דף הבית</a>
-        </div>
+        <img class="logo animate-fallFromTop animation-delay-500" src="/css/img/logo.png" alt="">
+        <div class="flex flex-1 gap-14 justify-end font-Assistant text-[16px] font-semibold">
+        <a class="animate-fallFromTop animation-delay-400" href="#">צרו קשר</a>
+        <a class="animate-fallFromTop animation-delay-300" href="#">מיתוג</a>
+        <a class="animate-fallFromTop animation-delay-200" href="#">אפליקציות</a>
+        <a class="animate-fallFromTop animation-delay-100" href="#">אתרים</a>
+        <a class="animate-fallFromTop" href="#">דף הבית</a>
+      </div>
+     </div>
     </div>
       <div class="max-w-screen-xl flex flex-wrap items-center justify-end mx-auto p-4">
         <button data-collapse-toggle="navbar-default" type="button" class="header__bars z-[999] fixed right-0 top-0 mt-4 mr-4 inline-flex items-center p-1 text-grey rounded-lg md:hidden" aria-controls="navbar-default" aria-expanded="false">
@@ -30,9 +32,9 @@
           <svg class="w-7 h-7" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
         </button>
  <!-- Mobile Navigation -->
- <div class="mobile-nav bg-clearWhite">
+ <div class="mobile-nav bg-dark">
   <nav>
-    <ul class="mobile-nav__menu">
+    <ul class="mobile-nav__menu text-white">
       <li>
         <a class="mobile-nav__link" href="#home">דף הבית</a>
       </li>
@@ -47,7 +49,7 @@
       </li>
       <li class=""></li>
       <li>
-        <button class="button bg-black text-white text-[20px]" href="#">צרו קשר</button>
+        <button class="button bg-clearWhite text-dark text-[20px]" href="#">צרו קשר</button>
       </li>
     </ul>
   </nav>
@@ -56,11 +58,11 @@
     </header>
     <!-- First Section -->
     <section>
-    <div class="flex flex-col items-center justify-center font-Assistant bg-clearWhite text-black3 pb-40 h-screen leading-9 md:leading-normal">
+    <div class="flex flex-col items-center justify-center font-Assistant bg-dark pb-40 h-screen leading-9 md:leading-normal">
         <!-- Title -->
-        <h1 class="font-bold text-[33px] md:text-6xl lg:text-8xl"> עיצוב גרפי</h1>
-        <h1 class="font-semibold text-[33px] text-center md:text-6xl lg:text-8xl">בניית אתרים ואפליקציות</h1>
-        <h1 class="font-normal text-[33px] md:text-6xl lg:text-8xl">מיתוג מנצח</h1>
+        <h1 class="text-cream1 font-bold text-[33px] md:text-6xl lg:text-8xl"> עיצוב גרפי</h1>
+        <h1 class="text-cream2 font-semibold text-[33px] text-center md:text-6xl lg:text-8xl">בניית אתרים ואפליקציות</h1>
+        <h1 class="text-cream3 font-normal text-[33px] md:text-6xl lg:text-8xl">מיתוג מנצח</h1>
         <!-- Paragraph md screen and above -->
         <p class="text-xl md:text-2xl lg:text-3xl text-center font-normal mt-4 hidden md:block">אם אתם מחפשים אתר | אפליקציה | מיתוג מיוחד לא משהו שקיים בשוק
             <br>כזה שישאיר חותם והלקוחות לא ישכחו אותו הגעתם למקום הנכון<br>(: HORIZON נעים להכיר</p>
@@ -73,7 +75,7 @@
         </p>
     </section>
     <!-- Section 2 -->
-    <div class="bg-black2 flex justify-center h-fit">
+    <div class="bg-dark flex justify-center h-fit">
         <!-- md screen and above -->
           <div class="font-semifold font-Assistant text-white text-center hidden md:flex flex-col justify-around text-4xl md:text-6xl lg:text-7xl">
             <p class="scrubText mt-2 md:mt-6 lg:mt-8">עיצוב חווית משתמש מנצח<br>בהתאמה אישית וסקיילבילית</p>
@@ -122,7 +124,7 @@
                              ובמודל העסקי ברמת UX/UI הגבוהה ביותר!</bdi>
                         </p>
                         <!-- I am Ready Button -->
-                        <button href="#" class="button bg-white text-black mt-[27px] md:mt-20">אני מוכן</button>
+                        <button href="#" class="button bg-white text-dark mt-[27px] md:mt-20">אני מוכן</button>
                     </div>
             </div>
         </div>
@@ -131,22 +133,22 @@
             <div class="pin-wrapper">
                 <!-- <div class="img"></div> -->
                     <div class="flex flex-col w-11/12 md:w-10/12 items-end text-right mx-auto">
-                    <p class="font-Assistant font-semibold md:font-bold text-3xl md:text-5xl leading-tight text-black mt-32">מוכן לראות
+                    <p class="font-Assistant font-semibold md:font-bold text-3xl md:text-5xl leading-tight text-dark mt-32">מוכן לראות
                     <br>את <span class="gradientLightGrey">המיתוג שלך</span>
                     <br>בעיצוב המדוייק לעסק שלך</p>
-                    <p class="font-Assistant font-normal leading-6 md:leading-9 text-black mt-8 text-xl md:text-2xl">
+                    <p class="font-Assistant font-normal leading-6 md:leading-9 text-dark mt-8 text-xl md:text-2xl">
                         <bdi>מיתוג זה יצירת זהות, זו אמירה, זו היכולת<br> 
                         לשדר משהו ללקוח ולהצטייר בפניו כמשהו<br> 
                         גדול ורציני, כזה שגם יוצר תחושת שייכות
                         </bdi>
                     </p>
                     <!-- I am Ready Button -->
-                    <button  class="button bg-black text-white mt-[50px] md:mt-20">אני מוכן</button>
+                    <button  class="button bg-dark text-white mt-[50px] md:mt-20">אני מוכן</button>
                     </div>
                 </div>
         </div>
         
-        <div id="slide03" class="slide bg-black h-screen w-screen">
+        <div id="slide03" class="slide bg-dark h-screen w-screen">
             <div class="pin-wrapper">
                 <!-- <div class="img"></div> -->
                     <div class="flex flex-col w-11/12 md:w-10/12 items-end text-right mx-auto">

@@ -1,4 +1,8 @@
-
+document.addEventListener('DOMContentLoaded', function() {
+	var navigationContainer = document.querySelector('.Nav_Container');
+	navigationContainer.classList.add('active');
+  });
+  
 const mobileNav = () => {
 	const headerBtn = document.querySelector('.header__bars');
 	const mobileNav = document.querySelector('.mobile-nav');

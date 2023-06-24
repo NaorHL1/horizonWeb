@@ -8,6 +8,30 @@
     font-display: swap;
 }
 
+
+.logo {
+  width: 173.293px;
+  height: 35px;
+  flex-shrink: 0;
+}
+
+.Nav_Container {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  transition: top 0.8s ease, opacity 0.8s ease;
+}
+
+.Nav_Container.active {
+  top: 0;
+  opacity: 0.98;
+}
+
+
 .header__bars {
   color: var(--clr-light);
   width: var(--size-2xl);
