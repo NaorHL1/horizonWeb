@@ -16,19 +16,19 @@
 }
 
 .Nav_Container {
+  z-index: 999;
   position: fixed;
   top: -100%;
   left: 0;
   width: 100%;
-  background-color: #333;
-  color: #fff;
+  background-color: rgb(51, 51, 51);
   text-align: center;
   transition: top 1.2s ease, opacity 1.2s ease;
 }
 
 .Nav_Container.active {
   top: 0;
-  opacity: 0.98;
+  opacity: 0.90;
 }
 
 
@@ -91,6 +91,11 @@
 
 .mobile-nav__btn {
   font-size: var(--size-sm);
+}
+
+.art {
+  width: 1868px;
+  height: 299px; 
 }
 
 .btn {
@@ -198,6 +203,7 @@
   .slide {
     position: relative;
     overflow: hidden;
+    max-width: 100%;
   }
       .slide .pin-wrapper {
           width: 100%;
@@ -218,6 +224,7 @@
   
   
   #slide02 .pin-wrapper {
+    
       transform: translateY(-100%);
   }
 
