@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function() {
 	var navigationContainer = document.querySelector('.Nav_Container');
 	navigationContainer.classList.add('active');
@@ -35,6 +36,8 @@ const mobileNav = () => {
   
 mobileNav();  
 
+
+  
 ScrollReveal().reveal('.headline');
 
 var slideUp = {
@@ -51,6 +54,31 @@ ScrollReveal().reveal('.slide-up', slideUp);
 
 gsap.registerPlugin(ScrollTrigger);
 
+
+const art = document.querySelectorAll("#art");
+
+  
+let tl = gsap.timeline({
+	scrollTrigger: {
+	  trigger: art,
+	  start: "top 20%",
+	  end: "+=150%",
+	  scrub: 1,
+	  markers: true,
+	}
+  });
+  
+//   tl.to(art, {
+// 	y: -300,
+// 	x: 200,
+// 	rotation: -20,
+// 	scale: 2.5,
+// 	opacity: 0.7,
+// 	ease: "power1.inOut",
+// 	duration: 0.3 // this is the proportion of the scroll distance this animation will take, adjust if needed
+//   })
+
+  
 const scrubTextElements = document.querySelectorAll(".scrubText");
 
 scrubTextElements.forEach((element) => {
@@ -69,6 +97,22 @@ scrubTextElements.forEach((element) => {
     }
   });
 });
+
+const maskText = document.querySelectorAll(".maskText");
+
+  gsap.to(maskText, {
+    y: -120,
+    opacity: 1,
+    scrollTrigger: {
+      trigger: maskText,
+      start: "top 70%",
+      end: `+=${maskText.offsetHeight + 80}`,
+      scrub: 0.5,
+      toggleActions: "restart none none none",
+      markers: false,
+      toggleClass: "red",
+    }
+  });
 
 	$(document).ready(function(){
 
