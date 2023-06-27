@@ -538,6 +538,10 @@ video {
   position: fixed !important;
 }
 
+.absolute {
+  position: absolute !important;
+}
+
 .relative {
   position: relative !important;
 }
@@ -702,6 +706,10 @@ video {
 
 .gap-14 {
   gap: 3.5rem !important;
+}
+
+.self-end {
+  align-self: flex-end !important;
 }
 
 .overflow-hidden {
@@ -871,8 +879,8 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
 
-.opacity-50 {
-  opacity: 0.5 !important;
+.opacity-70 {
+  opacity: 0.7 !important;
 }
 
 .animation-delay-100 {

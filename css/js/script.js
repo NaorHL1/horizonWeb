@@ -64,7 +64,7 @@ let tl = gsap.timeline({
 	  start: "top 20%",
 	  end: "+=150%",
 	  scrub: 1,
-	  markers: true,
+	  markers: false,
 	}
   });
   

@@ -16,6 +16,7 @@ module.exports = {
       
       backgroundImage: {
         'gradientGrey': 'linear-gradient(180deg, #1A1B1D 0%, #1A1B1D 100%)',
+        'dna': 'url("img/dnaonce.gif")',
         'sea2': 'url("http://porschevolution.com/images/slides/2000.jpg")',
         'sea3': 'url("http://porschevolution.com/images/slides/2010.jpg")'
       },
