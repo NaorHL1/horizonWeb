@@ -2,8 +2,9 @@ function animateOnScroll(canvasID, videoInfo) {
   const canvas = document.getElementById(canvasID);
   const canvasContext = canvas.getContext("2d");
 
-  canvas.height = screen.height;
-  canvas.width = screen.width;
+  canvas.height = window.innerHeight;
+  canvas.width = window.innerWidth;
+  canvas.style.position = "fixed";
 
   for (let i = 0; i <= videoInfo.totalFrames; i++) {
     const img = new Image();
@@ -19,8 +20,7 @@ function animateOnScroll(canvasID, videoInfo) {
       trigger: canvas,
       start: "top",
       end: `bottom+=${videoInfo.totalFrames * videoInfo.totalTime}`,
-      scrub: 0.5,
-      pin: true,
+      scrub: 0.2,
       markers: true,
     },
     onUpdate: render,
@@ -31,6 +31,6 @@ function animateOnScroll(canvasID, videoInfo) {
   };
 
   function render() {
-    canvasContext.drawImage(videoInfo.images[videoInfo.currentFrame], 0, 0);
+    canvasContext.drawImage(videoInfo.images[videoInfo.currentFrame], 0, 0); // Draw the new frame
   }
 }

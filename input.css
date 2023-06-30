@@ -23,6 +23,7 @@
   left: 0;
   width: 100%;
   background-color: rgb(51, 51, 51);
+  backdrop-filter: blur(10px);
   text-align: center;
   transition: top 1.2s ease, opacity 1.2s ease;
 }
@@ -32,6 +33,9 @@
   opacity: 0.90;
 }
 
+.blur-on-touch {
+  backdrop-filter: blur(10px); /* Adjust the blur intensity as needed */
+}
 
 .header__bars {
   color: var(--clr-light);
