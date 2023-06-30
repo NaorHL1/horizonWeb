@@ -31,6 +31,7 @@ function animateOnScroll(canvasID, videoInfo) {
   };
 
   function render() {
+    canvasContext.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas
     canvasContext.drawImage(videoInfo.images[videoInfo.currentFrame], 0, 0); // Draw the new frame
   }
 }
