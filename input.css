@@ -15,6 +15,7 @@
   flex-shrink: 0;
 }
 
+
 .Nav_Container {
   z-index: 999;
   position: fixed;
@@ -38,6 +39,7 @@
   height: var(--size-2xl);
   display: block;
 }
+
 
 .mobile-nav {
   position: fixed;
@@ -235,3 +237,10 @@
       position: absolute !important;
       clip: rect(auto, auto, auto, auto);
   }
+
+footer {
+  overflow-y: hidden;
+  text-align: center;
+  position: sticky;
+  z-index: 9999;
+}

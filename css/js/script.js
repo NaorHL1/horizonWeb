@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function() {
 	var navigationContainer = document.querySelector('.Nav_Container');
 	navigationContainer.classList.add('active');
@@ -34,10 +33,9 @@ const mobileNav = () => {
 	});
   };
   
-mobileNav();  
+mobileNav();
 
 
-  
 ScrollReveal().reveal('.headline');
 
 var slideUp = {
@@ -53,7 +51,6 @@ ScrollReveal().reveal('.slide-up', slideUp);
 
 
 gsap.registerPlugin(ScrollTrigger);
-
 
 const art = document.querySelectorAll("#art");
 
@@ -97,6 +94,8 @@ scrubTextElements.forEach((element) => {
     }
   });
 });
+
+
 
 const maskText = document.querySelectorAll(".maskText");
 
