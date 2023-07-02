@@ -1,4 +1,8 @@
 /** @type {import('tailwindcss').Config} */
+
+const plugin = require('tailwindcss/plugin');
+
+
 module.exports = {
   important: true,
   content: ['./css/*.html'],
@@ -13,7 +17,19 @@ module.exports = {
         lg: '976px',
         xl: '1440px'
       },
-      
+      backdropFilter: {
+        'none': 'none',
+        'blur': 'blur(20px)',
+        // other custom values...
+      },
+      backdropBrightness: {
+        '75': 'brightness(0.75)',
+        // other custom values...
+      },
+      backdropSaturate: {
+        '70': 'saturate(0.7)',
+        // other custom values...
+      },
       backgroundImage: {
         'gradientGrey': 'linear-gradient(180deg, #1A1B1D 0%, #1A1B1D 100%)',
         'dna': 'url("img/dnaonce.gif")',
@@ -25,7 +41,10 @@ module.exports = {
         fadeOut: "fadeOut 1.5s 1s ease-out forwards",
         fallFromTop: 'fallFromTop 1.2s ease-in-out',
         variants: {
-          animation: ["motion-safe"]
+          animation: ["motion-safe"],
+          backdropFilter: ['responsive'],
+          backdropBrightness: ['responsive'],
+          backdropSaturate: ['responsive'],
       }
       },
       keyframes: {
@@ -44,10 +63,10 @@ module.exports = {
       },
       colors:{
         clearWhite: '#f3f3f3',
-        cream1: '#CECECE',
-        cream2: '#D2D2D2',
-        cream3: '#D5D5D5',
-        bgblack: '#03050B',
+        cream1: 'rgba(206, 206, 206, 1)',
+        cream2: 'rgba(210, 210, 210, 1)',
+        cream3: 'rgba(213, 213, 213, 1)',
+        bgblack: 'rgba(3, 5, 11, 1)',
         lightBlack: '#1E1E1E',
         cherry: '#D2042D',
         lightGreen: '#00E498',
@@ -61,6 +80,21 @@ module.exports = {
   },
   plugins: [
     require("tailwindcss-animation-delay"),
+    plugin(function ({ addVariant, e, postcss }) {
+      addVariant('firefox', ({ container, separator }) => {
+      const isFirefoxRule = postcss.atRule({
+        name: '-moz-document',
+        params: 'url-prefix()',
+      });
+      isFirefoxRule.append(container.nodes);
+      container.append(isFirefoxRule);
+      isFirefoxRule.walkRules((rule) => {
+        rule.selector = `.${e(
+        `firefox${separator}${rule.selector.slice(1)}`
+        )}`;
+      });
+      });
+    }),
+    require('tailwindcss-filters'),
   ],
 }
-

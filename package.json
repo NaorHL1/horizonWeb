@@ -11,8 +11,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "postcss": "^8.4.24",
     "scrollreveal": "^4.0.9",
     "tailwindcss": "^3.3.2",
-    "tailwindcss-animation-delay": "^1.0.7"
+    "tailwindcss-animation-delay": "^1.0.7",
+    "tailwindcss-filters": "^3.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.8"
   }
 }
