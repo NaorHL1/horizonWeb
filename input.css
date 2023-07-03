@@ -151,7 +151,6 @@
     background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.8) 9.37%, #777777 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
 }
 
 
