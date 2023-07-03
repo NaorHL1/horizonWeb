@@ -777,19 +777,14 @@ video {
   padding-right: 30px !important;
 }
 
-.py-\[11px\] {
-  padding-top: 11px !important;
-  padding-bottom: 11px !important;
-}
-
-.py-\[15px\] {
-  padding-top: 15px !important;
-  padding-bottom: 15px !important;
-}
-
 .py-\[13px\] {
   padding-top: 13px !important;
   padding-bottom: 13px !important;
+}
+
+.py-\[200px\] {
+  padding-top: 200px !important;
+  padding-bottom: 200px !important;
 }
 
 .pb-40 {
@@ -833,8 +828,8 @@ video {
   line-height: 1 !important;
 }
 
-.text-\[16px\] {
-  font-size: 16px !important;
+.text-\[17px\] {
+  font-size: 17px !important;
 }
 
 .text-\[20px\] {
@@ -853,14 +848,6 @@ video {
 .text-xl {
   font-size: 1.25rem !important;
   line-height: 1.75rem !important;
-}
-
-.text-\[18px\] {
-  font-size: 18px !important;
-}
-
-.text-\[17px\] {
-  font-size: 17px !important;
 }
 
 .font-bold {
