@@ -142,10 +142,12 @@
     font-style: normal;
     font-weight: 700;
     line-height: 50px;
+    outline: none;
+    border: none;
+    box-shadow: none;
 
     margin-bottom: 180px;
     
-    background: -webkit-linear-gradient(#777777);
     background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.8) 9.37%, #777777 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
