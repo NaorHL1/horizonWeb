@@ -87,7 +87,7 @@ scrubTextElements.forEach((element) => {
       trigger: element,
       start: "top 70%",
       end: `+=${element.offsetHeight + 80}`,
-      scrub: 0.35,
+      scrub: 0.55,
       toggleActions: "restart none none none",
       markers: false,
       toggleClass: "red",

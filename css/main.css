@@ -782,11 +782,6 @@ video {
   padding-bottom: 13px !important;
 }
 
-.py-\[200px\] {
-  padding-top: 200px !important;
-  padding-bottom: 200px !important;
-}
-
 .pb-40 {
   padding-bottom: 10rem !important;
 }
@@ -1055,7 +1050,7 @@ video {
 
 @media (max-width: 768px) {
   .scrubText{
-    height: 100px;
+    height: 90px;
     margin-bottom: 90px;
   }
 }
