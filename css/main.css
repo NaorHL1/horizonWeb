@@ -1174,6 +1174,18 @@ footer {
     display: flex !important;
   }
 
+  .sm\:h-\[20px\] {
+    height: 20px !important;
+  }
+
+  .sm\:h-\[22px\] {
+    height: 22px !important;
+  }
+
+  .sm\:h-\[23px\] {
+    height: 23px !important;
+  }
+
   .sm\:items-center {
     align-items: center !important;
   }
@@ -1210,6 +1222,46 @@ footer {
 
   .md\:hidden {
     display: none !important;
+  }
+
+  .md\:h-\[20px\] {
+    height: 20px !important;
+  }
+
+  .md\:h-\[10px\] {
+    height: 10px !important;
+  }
+
+  .md\:h-\[5px\] {
+    height: 5px !important;
+  }
+
+  .md\:h-\[0px\] {
+    height: 0px !important;
+  }
+
+  .md\:h-\[30px\] {
+    height: 30px !important;
+  }
+
+  .md\:h-\[25px\] {
+    height: 25px !important;
+  }
+
+  .md\:h-\[22px\] {
+    height: 22px !important;
+  }
+
+  .md\:h-\[21px\] {
+    height: 21px !important;
+  }
+
+  .md\:h-\[23px\] {
+    height: 23px !important;
+  }
+
+  .md\:h-\[24px\] {
+    height: 24px !important;
   }
 
   .md\:w-10\/12 {
@@ -1261,6 +1313,10 @@ footer {
 
   .lg\:mt-8 {
     margin-top: 2rem !important;
+  }
+
+  .lg\:h-\[fit\] {
+    height: fit !important;
   }
 
   .lg\:text-3xl {
