@@ -940,8 +940,8 @@ video {
 
 .Nav_Container {
   background-color: rgba(rgba(0,0,0,.7));
-  -webkit-backdrop-filter: blur(30px) brightness(75%) saturate(30%);
-          backdrop-filter: blur(30px) brightness(75%) saturate(30%);
+  -webkit-backdrop-filter: blur(28px) brightness(75%) saturate(30%);
+          backdrop-filter: blur(28px) brightness(75%) saturate(30%);
   top: -100%;
   left: 0;
   width: 100%;
@@ -1061,6 +1061,7 @@ video {
   font-weight: 700;
   line-height: 50px;
   margin-bottom: 180px;
+  background: -webkit-linear-gradient(#777777);
   background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.8) 9.37%, #777777 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1159,23 +1160,6 @@ footer {
 .hover\:underline:hover {
   -webkit-text-decoration-line: underline !important;
           text-decoration-line: underline !important;
-}
-
-@media (prefers-color-scheme: dark) {
-  .dark\:border-gray-700 {
-    --tw-border-opacity: 1 !important;
-    border-color: rgb(55 65 81 / var(--tw-border-opacity)) !important;
-  }
-
-  .dark\:text-gray-400 {
-    --tw-text-opacity: 1 !important;
-    color: rgb(156 163 175 / var(--tw-text-opacity)) !important;
-  }
-
-  .dark\:text-white {
-    --tw-text-opacity: 1 !important;
-    color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
-  }
 }
 
 @media (min-width: 480px) {
