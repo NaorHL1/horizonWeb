@@ -580,8 +580,8 @@ video {
   margin-bottom: 1.5rem !important;
 }
 
-.ml-\[700px\] {
-  margin-left: 700px !important;
+.ml-\[600px\] {
+  margin-left: 600px !important;
 }
 
 .mr-4 {
@@ -739,7 +739,8 @@ video {
 }
 
 .bg-bgblack {
-  background-color: rgba(3, 5, 11, 1) !important;
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(7 10 19 / var(--tw-bg-opacity)) !important;
 }
 
 .bg-cream2 {
@@ -874,7 +875,8 @@ video {
 }
 
 .text-bgblack {
-  color: rgba(3, 5, 11, 1) !important;
+  --tw-text-opacity: 1 !important;
+  color: rgb(7 10 19 / var(--tw-text-opacity)) !important;
 }
 
 .text-cream1 {
@@ -939,7 +941,7 @@ video {
 }
 
 .Nav_Container {
-  background-color: rgba(rgba(0,0,0,.7));
+  background-color:rgba(38, 70, 75, 0.1);
   -webkit-backdrop-filter: blur(28px) brightness(75%) saturate(30%);
           backdrop-filter: blur(28px) brightness(75%) saturate(30%);
   top: -100%;

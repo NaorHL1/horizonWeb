@@ -16,7 +16,7 @@
 
 
 .Nav_Container {
-  background-color: rgba(rgba(0,0,0,.7));
+  background-color:rgba(38, 70, 75, 0.1);
   backdrop-filter: blur(28px) brightness(75%) saturate(30%);
   top: -100%;
   left: 0;
