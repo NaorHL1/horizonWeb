@@ -1,8 +1,8 @@
 gsap.registerPlugin(ScrollTrigger);
 
 const demoVideo1Info = {
-  totalFrames: 117,
-  totalTime: 19.8,
+  totalFrames: 140,
+  totalTime: 16,
   images: [],
   currentFrame: 0,
   currentImage: (index) =>
