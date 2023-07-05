@@ -8,6 +8,9 @@
     font-display: swap;
 }
 
+html , body {
+  overflow-x: hidden;
+}
 
 .logo {
   width: 150px;
@@ -98,6 +101,13 @@
   opacity: 0.7;
 }
 
+.shadow {
+  overflow-x: hidden;
+  width: 850px;
+  height: 300.456px;
+  transform: rotate(15deg);
+  background: linear-gradient(180deg, #070B14 41.13%, rgba(7, 11, 20, 0.62) 66.15%, rgba(7, 11, 20, 0.00) 100%);
+}
 
 .btn {
   display: inline-block;
