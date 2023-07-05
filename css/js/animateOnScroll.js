@@ -2,16 +2,16 @@ function animateOnScroll(canvasID, videoInfo) {
   const canvas = document.getElementById(canvasID);
   const canvasContext = canvas.getContext("2d");
 
-  canvas.height = window.innerHeight;
+// Set canvas dimensions based on the screen size
+canvas.width = Math.min(window.innerWidth, window.innerWidth);
+canvas.height = Math.min(window.innerHeight, window.innerHeight);
 
-  var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+// Add an event listener to handle window resize
+window.addEventListener("resize", function() {
+  canvas.width = Math.min(window.innerWidth, window.innerWidth / 1.7);
+  canvas.height = Math.min(window.innerHeight, window.innerHeight);
+});
 
-  if (isMobile) {
-      canvas.width = window.innerWidth / 1.7;
-  } else {
-      canvas.width = window.innerWidth;
-  }
-  
   canvas.style.position = "fixed";
 
   for (let i = 0; i <= videoInfo.totalFrames; i++) {
