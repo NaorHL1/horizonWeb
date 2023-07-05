@@ -3,7 +3,7 @@ function animateOnScroll(canvasID, videoInfo) {
   const canvasContext = canvas.getContext("2d");
 
   canvas.height = window.innerHeight;
-  canvas.width = window.innerWidth;
+  canvas.width = window.innerWidth / 1.7;
   canvas.style.position = "fixed";
 
   for (let i = 0; i <= videoInfo.totalFrames; i++) {

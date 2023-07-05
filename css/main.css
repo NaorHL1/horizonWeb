@@ -580,14 +580,6 @@ video {
   margin-bottom: 1.5rem !important;
 }
 
-.ml-\[600px\] {
-  margin-left: 600px !important;
-}
-
-.ml-\[700px\] {
-  margin-left: 700px !important;
-}
-
 .mr-4 {
   margin-right: 1rem !important;
 }
@@ -910,10 +902,6 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
 
-.opacity-100 {
-  opacity: 1 !important;
-}
-
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1) !important;
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color) !important;
@@ -1042,7 +1030,7 @@ html , body {
 .shadow {
   overflow-x: hidden;
   width: 850px;
-  height: 300.456px;
+  height: 380.456px;
   transform: rotate(15deg);
   background: linear-gradient(180deg, #070B14 41.13%, rgba(7, 11, 20, 0.62) 66.15%, rgba(7, 11, 20, 0.00) 100%);
 }

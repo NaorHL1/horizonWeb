@@ -104,7 +104,7 @@ html , body {
 .shadow {
   overflow-x: hidden;
   width: 850px;
-  height: 300.456px;
+  height: 380.456px;
   transform: rotate(15deg);
   background: linear-gradient(180deg, #070B14 41.13%, rgba(7, 11, 20, 0.62) 66.15%, rgba(7, 11, 20, 0.00) 100%);
 }
