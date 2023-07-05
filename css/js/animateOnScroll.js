@@ -2,16 +2,8 @@ function animateOnScroll(canvasID, videoInfo) {
   const canvas = document.getElementById(canvasID);
   const canvasContext = canvas.getContext("2d");
 
-// Set canvas dimensions based on the screen size
-canvas.width = Math.min(window.innerWidth, window.innerWidth);
-canvas.height = Math.min(window.innerHeight, window.innerHeight);
-
-// Add an event listener to handle window resize
-window.addEventListener("resize", function() {
-  canvas.width = Math.min(window.innerWidth, window.innerWidth / 1.7);
-  canvas.height = Math.min(window.innerHeight, window.innerHeight);
-});
-
+  canvas.height = window.innerHeight;
+  canvas.width = window.innerWidth / 1.7;
   canvas.style.position = "fixed";
 
   for (let i = 0; i <= videoInfo.totalFrames; i++) {
