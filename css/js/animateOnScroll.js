@@ -21,7 +21,7 @@ function animateOnScroll(canvasID, videoInfo) {
       start: "top",
       end: `bottom+=${videoInfo.totalFrames * videoInfo.totalTime}`,
       scrub: 0.2,
-      markers: true,
+      markers: false,
       pinSpacing: false,
     },
     onUpdate: render,

@@ -20,20 +20,13 @@ html , body {
 
 
 .Nav_Container {
-  background-color:rgba(38, 70, 75, 0.1);
-  backdrop-filter: blur(28px) brightness(75%) saturate(30%);
+  background-color: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(28px);
   top: -100%;
   left: 0;
   width: 100%;
   text-align: center;
-  transition: top 1.2s ease, opacity 1.2s ease;
 }
-
-.Nav_Container.active {
-  top: 0;
-  opacity: 1;
-}
-
 
 .header__bars {
   color: var(--clr-light);
@@ -200,7 +193,6 @@ html , body {
         border-radius: 12px;
     }
 }
-
 
 .parallax {
     /* Create the parallax scrolling effect */
