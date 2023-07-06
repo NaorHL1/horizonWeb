@@ -994,10 +994,18 @@ html , body {
 }
 
 .Nav_Container {
+  position: fixed;
+  z-index: 999;
   top: -100%;
   left: 0;
   width: 100%;
   text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.Nav_Container.active {
+  width: 80%;
 }
 
 .header__bars {
@@ -1269,10 +1277,6 @@ footer {
 
   .md\:w-10\/12 {
     width: 83.333333% !important;
-  }
-
-  .md\:justify-end {
-    justify-content: flex-end !important;
   }
 
   .md\:py-8 {

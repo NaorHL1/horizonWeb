@@ -1,12 +1,13 @@
-window.addEventListener("scroll", function() {
-	var navbar = document.getElementById('navbar');
-	if (window.pageYOffset > 0) {
-	  navbar.style.borderRadius = '0 0 30px 30px';
+window.addEventListener('scroll', function() {
+	var navContainer = document.querySelector('.Nav_Container');
+	var scrollPosition = window.scrollY;
+  
+	if (scrollPosition > 60) {
+	  navContainer.classList.add('active');
 	} else {
-	  navbar.style.borderRadius = '0';
+	  navContainer.classList.remove('active');
 	}
   });
-
 
 const mobileNav = () => {
 	const headerBtn = document.querySelector('.header__bars');
