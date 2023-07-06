@@ -23,15 +23,18 @@ html , body {
   position: fixed;
   z-index: 999;
   top: -100%;
-  left: 0;
   width: 100%;
   text-align: center;
-  align-items: center;
-  justify-content: center;
 }
 
 .Nav_Container.active {
-  width: 80%;
+  scale: 0.95;
+  background: transparent;
+  backdrop-filter: blur(35px);
+  width: 90%;
+  border-radius: 30px;
+  left: 50%;
+  transform: translate(-50%, 10%);
 }
 
 .header__bars {
