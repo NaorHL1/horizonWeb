@@ -103,8 +103,8 @@ html , body {
 
 .shadow {
   overflow-x: hidden;
-  width: 850px;
-  height: 380.456px;
+  width: 700px;
+  height: 300.456px;
   transform: rotate(15deg);
 }
 
