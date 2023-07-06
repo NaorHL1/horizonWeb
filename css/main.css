@@ -1010,7 +1010,7 @@ html , body {
 }
 
 .Nav_Container.active {
-  background-color: rgba(31, 39, 65, 0.7);
+  background-color: rgba(10, 13, 25, 0.56);
   height: 64px;
   -webkit-backdrop-filter: blur(35px);
           backdrop-filter: blur(35px);
