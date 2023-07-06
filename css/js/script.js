@@ -1,3 +1,13 @@
+window.addEventListener("scroll", function() {
+	var navbar = document.getElementById('navbar');
+	if (window.pageYOffset > 0) {
+	  navbar.style.borderRadius = '0 0 30px 30px';
+	} else {
+	  navbar.style.borderRadius = '0';
+	}
+  });
+
+
 const mobileNav = () => {
 	const headerBtn = document.querySelector('.header__bars');
 	const mobileNav = document.querySelector('.mobile-nav');

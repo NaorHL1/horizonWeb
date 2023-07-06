@@ -20,8 +20,6 @@ html , body {
 
 
 .Nav_Container {
-  background-color: rgba(0, 0, 0, 0);
-  backdrop-filter: blur(28px);
   top: -100%;
   left: 0;
   width: 100%;
@@ -34,7 +32,6 @@ html , body {
   height: var(--size-2xl);
   display: block;
 }
-
 
 .mobile-nav {
   position: fixed;

@@ -994,9 +994,6 @@ html , body {
 }
 
 .Nav_Container {
-  background-color: rgba(0, 0, 0, 0);
-  -webkit-backdrop-filter: blur(28px);
-          backdrop-filter: blur(28px);
   top: -100%;
   left: 0;
   width: 100%;
