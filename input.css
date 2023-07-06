@@ -20,21 +20,24 @@ html , body {
 
 
 .Nav_Container {
+  background-color: rgba(31, 39, 65, 0);
   position: fixed;
   z-index: 999;
   top: -100%;
   width: 100%;
+  height: 75px;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
 .Nav_Container.active {
-  scale: 0.95;
-  background: transparent;
+  background-color: rgba(31, 39, 65, 0.7);
+  height: 64px;
   backdrop-filter: blur(35px);
-  width: 90%;
   border-radius: 30px;
-  left: 50%;
-  transform: translate(-50%, 10%);
+  transform: scale(0.88) translateY(10px);
+  transition: all 0.5s ease;
 }
 
 .header__bars {

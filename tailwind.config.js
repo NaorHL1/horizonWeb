@@ -86,6 +86,7 @@ module.exports = {
         bgblack80: 'rgba(7, 10, 19, 0.8)',
         bgblack30: 'rgba(7, 10, 19, 0.3)',
         lightBlack: '#1E1E1E',
+        navBlue: '#1F2741',
         cherry: '#D2042D',
         lightGreen: '#00E498',
         grey: '#696969',

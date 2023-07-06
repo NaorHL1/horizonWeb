@@ -2,7 +2,7 @@ window.addEventListener('scroll', function() {
 	var navContainer = document.querySelector('.Nav_Container');
 	var scrollPosition = window.scrollY;
   
-	if (scrollPosition > 85) {
+	if (scrollPosition > 70) {
 	  navContainer.classList.add('active');
 	} else {
 	  navContainer.classList.remove('active');
