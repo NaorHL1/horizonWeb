@@ -4,6 +4,14 @@ function animateOnScroll(canvasID, videoInfo) {
 
   canvas.height = window.innerHeight;
   canvas.width = window.innerWidth / 1.7;
+  
+  var isMobile = window.navigator.userAgent.match(/Mobile|iPhone|iPod|BlackBerry|Windows Phone|iPad|Android/i);
+
+// If the user is on a mobile device, set the canvas width to the window width
+  if(isMobile) {
+    canvas.width = 1500;
+  }
+
   canvas.style.position = "fixed";
 
   for (let i = 0; i <= videoInfo.totalFrames; i++) {
