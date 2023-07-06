@@ -9,7 +9,7 @@ function animateOnScroll(canvasID, videoInfo) {
 
 // If the user is on a mobile device, set the canvas width to the window width
   if(isMobile) {
-    canvas.width = 1500;
+    canvas.width = 800;
   }
 
   canvas.style.position = "fixed";
