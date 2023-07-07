@@ -2,13 +2,43 @@ window.addEventListener('scroll', function() {
 	var navContainer = document.querySelector('.Nav_Container');
 	var scrollPosition = window.scrollY;
   
-	if (scrollPosition > 70) {
+	if (scrollPosition > 70 && scrollPosition < 3070) {
 	  navContainer.classList.add('active');
+	  navContainer.classList.remove('reverse'); // Ensure 'reverse' class is removed when scrolling down
 	} else {
 	  navContainer.classList.remove('active');
+	  navContainer.classList.add('reverse');
 	}
   });
 
+  $(window).scroll(function() {
+	// Setting: Start fading closer to the top of the page
+	var startPos = 0.05;
+	
+	// Cache window object
+	var $w = $(window);
+	
+	// Basically, we go through each element and check its relative position within the viewport
+	$('.scrollFade').each(function() {
+	
+	  // Get current relative position in viewport, based on the top edge
+	  var pos = $(this).offset().top - $w.scrollTop();
+	
+	  // Get viewport height
+	  var vh = $w.height();
+	
+	  if (pos < vh * startPos) {
+		// If element has passed the starting threshold, we fade it
+		var opacity = Math.max((pos / (vh * startPos) * 1.5) - 0.5, 0);
+		$(this).css('opacity', opacity);
+	  } else {
+		$(this).css('opacity', 1);
+	  }
+	});
+  });
+  
+  
+  
 const mobileNav = () => {
 	const headerBtn = document.querySelector('.header__bars');
 	const mobileNav = document.querySelector('.mobile-nav');

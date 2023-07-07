@@ -38,7 +38,7 @@ module.exports = {
       },
       animation: {
         fadeIn: "fadeIn 2.2s ease-in both",
-        fadeOut: "fadeOut 1.2s 1s ease-out forwards",
+        fadeOut: "fadeOut 0.5s forwards",
         fallFromTop: 'fallFromTop 1.2s ease-in-out',
         variants: {
           animation: ["motion-safe"],
@@ -65,11 +65,9 @@ module.exports = {
         fadeOut: {
           '0%': {
             opacity: 1,
-            transform: 'translateY(0px)',
           },
           '100%': {
             opacity: 0,
-            transform: 'translateY(-80px)',
           },
         },
         fallFromTop: {

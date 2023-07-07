@@ -27,16 +27,31 @@ html , body {
   width: 100%;
   height: 75px;
   justify-content: center;
+  padding-right: 20px;
+  padding-left: 20px;
   align-items: center;
   text-align: center;
 }
 
 .Nav_Container.active {
-  background-color: rgba(10, 13, 25, 0.56);
+  background-color: rgba(15, 16, 28, 0.56);
   height: 64px;
   backdrop-filter: blur(35px);
-  border-radius: 30px;
-  transform: scale(0.88) translateY(10px);
+  border-radius: 27px;
+  transform: scale(0.9) translateY(10px);
+  padding-right: 30px;
+  padding-left: 30px;
+  transition: all 0.5s ease;
+}
+
+.Nav_Container.reverse {
+  background-color: rgba(31, 39, 65, 0);
+  height: 75px;
+  backdrop-filter: none;
+  border-radius: 0;
+  transform: scale(1) translateY(0);
+  padding-right: 20px;
+  padding-left: 20px;
   transition: all 0.5s ease;
 }
 
@@ -193,7 +208,7 @@ html , body {
     width: 199px;
     font-size: 20px;
     height: 51px;
-    border-radius: 15px;
+    border-radius: 30px;
 }
 
 @media (max-width: 768px) {
@@ -201,7 +216,7 @@ html , body {
         width: 120px;
         font-size: 17px;
         height: 40px;
-        border-radius: 12px;
+        border-radius: 25px;
     }
 }
 
