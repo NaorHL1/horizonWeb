@@ -1,14 +1,13 @@
 var textElement = document.getElementById('navTrigger');
-var slideElement = document.getElementById('slide01');
+var stopElement = document.getElementById('navStop');
 var navContainer = document.querySelector('.Nav_Container');
 
 window.addEventListener('scroll', function() {
   var textRect = textElement.getBoundingClientRect();
-  var slideRect = slideElement.getBoundingClientRect();
-  var scrollPosition = window.scrollY;
+  var elementRect = stopElement.getBoundingClientRect();
   var triggerOffset = 40;
     
-  if (scrollPosition > slideRect) {
+  if (window.scrollY > elementRect.bottom) {
     navContainer.classList.remove('active');
     navContainer.classList.add('reverse');
   } else {
