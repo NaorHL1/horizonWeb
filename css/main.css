@@ -742,6 +742,10 @@ video {
   gap: 3.5rem !important;
 }
 
+.gap-10 {
+  gap: 2.5rem !important;
+}
+
 .self-center {
   align-self: center !important;
 }
@@ -1301,6 +1305,14 @@ footer {
     width: 83.333333% !important;
   }
 
+  .md\:gap-10 {
+    gap: 2.5rem !important;
+  }
+
+  .md\:gap-8 {
+    gap: 2rem !important;
+  }
+
   .md\:py-8 {
     padding-top: 2rem !important;
     padding-bottom: 2rem !important;
@@ -1346,6 +1358,10 @@ footer {
 
   .lg\:mt-8 {
     margin-top: 2rem !important;
+  }
+
+  .lg\:gap-14 {
+    gap: 3.5rem !important;
   }
 
   .lg\:text-3xl {
