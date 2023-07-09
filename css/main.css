@@ -738,10 +738,6 @@ video {
   justify-content: space-around !important;
 }
 
-.gap-14 {
-  gap: 3.5rem !important;
-}
-
 .gap-10 {
   gap: 2.5rem !important;
 }
@@ -750,8 +746,8 @@ video {
   align-self: center !important;
 }
 
-.rounded-full {
-  border-radius: 9999px !important;
+.rounded-3xl {
+  border-radius: 1.5rem !important;
 }
 
 .rounded-lg {
@@ -820,9 +816,14 @@ video {
   padding: 1.5rem !important;
 }
 
-.px-5 {
-  padding-left: 1.25rem !important;
-  padding-right: 1.25rem !important;
+.px-10 {
+  padding-left: 2.5rem !important;
+  padding-right: 2.5rem !important;
+}
+
+.py-2 {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
 }
 
 .py-\[13px\] {
@@ -1016,7 +1017,7 @@ html , body {
   -webkit-backdrop-filter: blur(35px);
           backdrop-filter: blur(35px);
   border-radius: 27px;
-  transform: scale(0.9) translateY(10px);
+  transform: scale(0.88) translateY(10px);
   padding-right: 25px;
   padding-left: 25px;
   transition: all 0.5s ease;
@@ -1303,14 +1304,6 @@ footer {
 
   .md\:w-10\/12 {
     width: 83.333333% !important;
-  }
-
-  .md\:gap-10 {
-    gap: 2.5rem !important;
-  }
-
-  .md\:gap-8 {
-    gap: 2rem !important;
   }
 
   .md\:py-8 {
