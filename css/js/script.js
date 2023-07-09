@@ -7,7 +7,7 @@ window.addEventListener('scroll', function() {
   var elementRect = stopElement.getBoundingClientRect();
   var triggerOffset = 40;
     
-  if (window.scrollY > elementRect.bottom) {
+  if (window.scrollY > elementRect.bottom + 120) {
     navContainer.classList.remove('active');
     navContainer.classList.add('reverse');
   } else {
