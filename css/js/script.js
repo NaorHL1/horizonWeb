@@ -1,41 +1,53 @@
-window.addEventListener('scroll', function() {
-	var navContainer = document.querySelector('.Nav_Container');
-	var scrollPosition = window.scrollY;
-  
-	if (scrollPosition > 70 && scrollPosition < 3070) {
-	  navContainer.classList.add('active');
-	  navContainer.classList.remove('reverse'); // Ensure 'reverse' class is removed when scrolling down
-	} else {
-	  navContainer.classList.remove('active');
-	  navContainer.classList.add('reverse');
-	}
-  });
+var textElement = document.getElementById('navTrigger');
+var slideElement = document.getElementById('slide01');
+var navContainer = document.querySelector('.Nav_Container');
 
-  $(window).scroll(function() {
-	// Setting: Start fading closer to the top of the page
-	var startPos = 0.05;
+window.addEventListener('scroll', function() {
+  var textRect = textElement.getBoundingClientRect();
+  var slideRect = slideElement.getBoundingClientRect();
+  var scrollPosition = window.scrollY;
+  var triggerOffset = 40;
+    
+  if (scrollPosition > slideRect) {
+    navContainer.classList.remove('active');
+    navContainer.classList.add('reverse');
+  } else {
+    // Check if the top of the text element is visible
+    if (textRect.top <= triggerOffset) {
+      navContainer.classList.add('active');
+      navContainer.classList.remove('reverse');
+    } else {
+      navContainer.classList.remove('active');
+      navContainer.classList.add('reverse');
+    }
+  }
+});
+  
+//   $(window).scroll(function() {
+// 	// Setting: Start fading closer to the top of the page
+// 	var startPos = 0.05;
 	
-	// Cache window object
-	var $w = $(window);
+// 	// Cache window object
+// 	var $w = $(window);
 	
-	// Basically, we go through each element and check its relative position within the viewport
-	$('.scrollFade').each(function() {
+// 	// Basically, we go through each element and check its relative position within the viewport
+// 	$('.scrollFade').each(function() {
 	
-	  // Get current relative position in viewport, based on the top edge
-	  var pos = $(this).offset().top - $w.scrollTop();
+// 	  // Get current relative position in viewport, based on the top edge
+// 	  var pos = $(this).offset().top - $w.scrollTop();
 	
-	  // Get viewport height
-	  var vh = $w.height();
+// 	  // Get viewport height
+// 	  var vh = $w.height();
 	
-	  if (pos < vh * startPos) {
-		// If element has passed the starting threshold, we fade it
-		var opacity = Math.max((pos / (vh * startPos) * 1.5) - 0.5, 0);
-		$(this).css('opacity', opacity);
-	  } else {
-		$(this).css('opacity', 1);
-	  }
-	});
-  });
+// 	  if (pos < vh * startPos) {
+// 		// If element has passed the starting threshold, we fade it
+// 		var opacity = Math.max((pos / (vh * startPos) * 1.5) - 0.5, 0);
+// 		$(this).css('opacity', opacity);
+// 	  } else {
+// 		$(this).css('opacity', 1);
+// 	  }
+// 	});
+//   });
   
   
   

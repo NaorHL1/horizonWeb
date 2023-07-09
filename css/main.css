@@ -826,8 +826,8 @@ video {
   padding-bottom: 13px !important;
 }
 
-.pb-40 {
-  padding-bottom: 10rem !important;
+.pb-20 {
+  padding-bottom: 5rem !important;
 }
 
 .text-center {
@@ -1000,8 +1000,8 @@ html , body {
   width: 100%;
   height: 75px;
   justify-content: center;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 60px;
+  padding-left: 60px;
   align-items: center;
   text-align: center;
 }
@@ -1013,8 +1013,8 @@ html , body {
           backdrop-filter: blur(35px);
   border-radius: 27px;
   transform: scale(0.9) translateY(10px);
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 25px;
+  padding-left: 25px;
   transition: all 0.5s ease;
 }
 
@@ -1025,8 +1025,8 @@ html , body {
           backdrop-filter: none;
   border-radius: 0;
   transform: scale(1) translateY(0);
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 60px;
+  padding-left: 60px;
   transition: all 0.5s ease;
 }
 
