@@ -22,35 +22,7 @@ window.addEventListener('scroll', function() {
     }
   }
 });
-  
-//   $(window).scroll(function() {
-// 	// Setting: Start fading closer to the top of the page
-// 	var startPos = 0.05;
-	
-// 	// Cache window object
-// 	var $w = $(window);
-	
-// 	// Basically, we go through each element and check its relative position within the viewport
-// 	$('.scrollFade').each(function() {
-	
-// 	  // Get current relative position in viewport, based on the top edge
-// 	  var pos = $(this).offset().top - $w.scrollTop();
-	
-// 	  // Get viewport height
-// 	  var vh = $w.height();
-	
-// 	  if (pos < vh * startPos) {
-// 		// If element has passed the starting threshold, we fade it
-// 		var opacity = Math.max((pos / (vh * startPos) * 1.5) - 0.5, 0);
-// 		$(this).css('opacity', opacity);
-// 	  } else {
-// 		$(this).css('opacity', 1);
-// 	  }
-// 	});
-//   });
-  
-  
-  
+
 const mobileNav = () => {
 	const headerBtn = document.querySelector('.header__bars');
 	const mobileNav = document.querySelector('.mobile-nav');
@@ -84,46 +56,39 @@ const mobileNav = () => {
 mobileNav();
 
 
-ScrollReveal().reveal('.headline');
-
-var slideUp = {
-  origin: 'bottom',
-  scale: 1.1,
-  easing: 'ease-in',
-  duration: 500,
-  delay: 250
-};
 
 
-ScrollReveal().reveal('.slide-up', slideUp);
+const elements = document.querySelectorAll('.animate-fadeIn');
 
+// loop through each element
+elements.forEach(function(element) {
+  // listen for the 'animationend' event on each element
+  element.addEventListener('animationend', function() {
+    // remove the class from the current element
+    this.classList.remove('animate-fadeIn');
+  });
+});
 
 gsap.registerPlugin(ScrollTrigger);
 
-const art = document.querySelectorAll("#art");
+const scrollFadeElements = document.querySelectorAll(".scrollFade");
 
-  
-let tl = gsap.timeline({
-	scrollTrigger: {
-	  trigger: art,
-	  start: "top 20%",
-	  end: "+=150%",
-	  scrub: 1,
-	  markers: false,
-	}
+scrollFadeElements.forEach((element) => {
+	gsap.fromTo(element, {
+        opacity: 1, // Start at full opacity
+    }, {
+        opacity: 0, // End at no opacity
+        scrollTrigger: {
+            trigger: element,
+            start: "top-=100 top",
+            end: `+=${element.offsetHeight}`,
+            scrub: true,
+            toggleActions: "restart none none none",
+            markers: false,
+        }
+    });
   });
-  
-//   tl.to(art, {
-// 	y: -300,
-// 	x: 200,
-// 	rotation: -20,
-// 	scale: 2.5,
-// 	opacity: 0.7,
-// 	ease: "power1.inOut",
-// 	duration: 0.3 // this is the proportion of the scroll distance this animation will take, adjust if needed
-//   })
 
-  
 const scrubTextElements = document.querySelectorAll(".scrubText");
 
 scrubTextElements.forEach((element) => {
