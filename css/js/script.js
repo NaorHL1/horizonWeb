@@ -74,20 +74,24 @@ gsap.registerPlugin(ScrollTrigger);
 const scrollFadeElements = document.querySelectorAll(".scrollFade");
 
 scrollFadeElements.forEach((element) => {
-	gsap.fromTo(element, {
-        opacity: 1,
-    }, {
-        opacity: 0,
+    // Create the timeline
+    let tl = gsap.timeline({
         scrollTrigger: {
             trigger: element,
-            start: "top-=100 top",
-            end: `+=${element.offsetHeight}`,
+            start: "top-=150 top",
+            end: "+=200",
             scrub: true,
             toggleActions: "restart none none none",
-            markers: false,
+            markers: true,
         }
     });
-  });
+
+    tl.fromTo(element, { opacity: 1 }, { opacity: 0.9, duration: 0.05 })
+      .to(element, { opacity: 0.7, duration: 0.04 })
+	  .to(element, { opacity: 0.5, duration: 0.03 })
+      .to(element, { opacity: 0, duration: 0.01 });
+});
+
 
 const scrubTextElements = document.querySelectorAll(".scrubText");
 
