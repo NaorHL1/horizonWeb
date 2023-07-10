@@ -75,9 +75,9 @@ const scrollFadeElements = document.querySelectorAll(".scrollFade");
 
 scrollFadeElements.forEach((element) => {
 	gsap.fromTo(element, {
-        opacity: 1, // Start at full opacity
+        opacity: 1,
     }, {
-        opacity: 0, // End at no opacity
+        opacity: 0,
         scrollTrigger: {
             trigger: element,
             start: "top-=100 top",
@@ -92,23 +92,24 @@ scrollFadeElements.forEach((element) => {
 const scrubTextElements = document.querySelectorAll(".scrubText");
 
 scrubTextElements.forEach((element) => {
-  gsap.to(element, {
-    y: 30,
-    scale: 0.85,
-    opacity: 1,
-    scrollTrigger: {
-      trigger: element,
-      start: "top 70%",
-      end: `+=${element.offsetHeight + 80}`,
-      scrub: 0.55,
-      toggleActions: "restart none none none",
-      markers: false,
-      toggleClass: "red",
-    }
+	gsap.fromTo(element,
+	  {opacity: 0},
+	  { 
+		y: 30,
+		scale: 0.85,
+		opacity: 1,
+		scrollTrigger: {
+		  trigger: element,
+		  start: "top 70%",
+		  end: `+=${element.offsetHeight + 80}`,
+		  scrub: true,
+		  toggleActions: "restart none none none",
+		  markers: false,
+		  toggleClass: "red",
+		}
+	  }
+	);
   });
-});
-
-
 
 const maskText = document.querySelectorAll(".maskText");
 
