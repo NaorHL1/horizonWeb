@@ -67,7 +67,7 @@ elements.forEach(function(element) {
     // remove the class from the current element
     this.classList.remove('animate-fadeIn');
   });
-});
+});  
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -78,17 +78,15 @@ scrollFadeElements.forEach((element) => {
     let tl = gsap.timeline({
         scrollTrigger: {
             trigger: element,
-            start: "top-=150 top",
-            end: "+=200",
+			start: "top-=35 140px",
+			end: `+=${element.offsetHeight+100}`,
             scrub: true,
             toggleActions: "restart none none none",
             markers: true,
         }
     });
 
-    tl.fromTo(element, { opacity: 1 }, { opacity: 0.9, duration: 0.05 })
-      .to(element, { opacity: 0.7, duration: 0.04 })
-	  .to(element, { opacity: 0.5, duration: 0.03 })
+    tl.fromTo(element, { opacity: 1 }, { opacity: 0.5, duration: 0.01 })
       .to(element, { opacity: 0, duration: 0.01 });
 });
 
