@@ -82,7 +82,7 @@ scrollFadeElements.forEach((element) => {
 			end: `+=${element.offsetHeight+100}`,
             scrub: true,
             toggleActions: "restart none none none",
-            markers: true,
+            markers: false,
         }
     });
 
