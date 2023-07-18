@@ -27,27 +27,29 @@ function animateOnScroll(canvasID, videoInfo) {
     imagePromises.push(imageLoadPromise);
   }
 
-  // Wait for all images to load before starting the animation
+  // Wait for all images to load
   Promise.all(imagePromises)
-    .then(() => {
-      gsap.to(videoInfo, {
-        currentFrame: videoInfo.totalFrames,
-        snap: "currentFrame",
-        ease: "none",
-        scrollTrigger: {
-          trigger: canvas,
-          start: "top",
-          end: `bottom+=${videoInfo.totalFrames * videoInfo.totalTime}`,
-          scrub: 0.2,
-          markers: false,
-          pinSpacing: false,
-        },
-        onUpdate: render,
-      });
-    })
-    .catch((error) => {
-      console.error("Failed to load images:", error);
-    });
+  .then(() => {
+    render(); // Call the render function directly after the images have loaded
+  })
+  .catch((error) => {
+    console.error("Failed to load images:", error);
+  });
+
+  gsap.to(videoInfo, {
+    currentFrame: videoInfo.totalFrames,
+    snap: "currentFrame",
+    ease: "none",
+    scrollTrigger: {
+      trigger: canvas,
+      start: "top",
+      end: `bottom+=${videoInfo.totalFrames * videoInfo.totalTime}`,
+      scrub: 0.2,
+      markers: false,
+      pinSpacing: false,
+    },
+    onUpdate: render,
+  });
 
   function render() {
     canvasContext.clearRect(0, 0, canvas.width, canvas.height);
