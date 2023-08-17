@@ -562,10 +562,6 @@ video {
   z-index: 999 !important;
 }
 
-.m-20 {
-  margin: 5rem !important;
-}
-
 .mx-auto {
   margin-left: auto !important;
   margin-right: auto !important;
@@ -574,11 +570,6 @@ video {
 .my-6 {
   margin-top: 1.5rem !important;
   margin-bottom: 1.5rem !important;
-}
-
-.mx-20 {
-  margin-left: 5rem !important;
-  margin-right: 5rem !important;
 }
 
 .mb-4 {
@@ -597,10 +588,6 @@ video {
   margin-top: 0.5rem !important;
 }
 
-.mt-2\.5 {
-  margin-top: 0.625rem !important;
-}
-
 .mt-32 {
   margin-top: 8rem !important;
 }
@@ -609,8 +596,16 @@ video {
   margin-top: 1rem !important;
 }
 
+.mt-5 {
+  margin-top: 1.25rem !important;
+}
+
 .mt-8 {
   margin-top: 2rem !important;
+}
+
+.mt-\[120px\] {
+  margin-top: 120px !important;
 }
 
 .mt-\[27px\] {
@@ -619,62 +614,6 @@ video {
 
 .mt-\[50px\] {
   margin-top: 50px !important;
-}
-
-.mt-1 {
-  margin-top: 0.25rem !important;
-}
-
-.mt-3 {
-  margin-top: 0.75rem !important;
-}
-
-.mt-10 {
-  margin-top: 2.5rem !important;
-}
-
-.mt-5 {
-  margin-top: 1.25rem !important;
-}
-
-.mt-6 {
-  margin-top: 1.5rem !important;
-}
-
-.mt-7 {
-  margin-top: 1.75rem !important;
-}
-
-.mt-9 {
-  margin-top: 2.25rem !important;
-}
-
-.mt-14 {
-  margin-top: 3.5rem !important;
-}
-
-.mt-20 {
-  margin-top: 5rem !important;
-}
-
-.mt-40 {
-  margin-top: 10rem !important;
-}
-
-.mt-60 {
-  margin-top: 15rem !important;
-}
-
-.mt-\[80px\] {
-  margin-top: 80px !important;
-}
-
-.mt-\[120px\] {
-  margin-top: 120px !important;
-}
-
-.mb-\[50px\] {
-  margin-bottom: 50px !important;
 }
 
 .block {
@@ -775,6 +714,20 @@ video {
   animation: fallFromTop 1.2s ease-in-out !important;
 }
 
+@keyframes slideUp {
+  0% {
+    transform: translateY(100px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-slideUp {
+  animation: slideUp 1s cubic-bezier(0.65, 0, 0.35, 1) both !important;
+}
+
 .flex-col {
   flex-direction: column !important;
 }
@@ -809,6 +762,10 @@ video {
 
 .self-center {
   align-self: center !important;
+}
+
+.overflow-hidden {
+  overflow: hidden !important;
 }
 
 .rounded-3xl {
@@ -903,10 +860,6 @@ video {
 
 .pb-20 {
   padding-bottom: 5rem !important;
-}
-
-.pb-\[50px\] {
-  padding-bottom: 50px !important;
 }
 
 .pb-\[200px\] {
@@ -1051,6 +1004,26 @@ video {
 
 .animation-delay-400 {
   animation-delay: 400ms !important;
+}
+
+.animation-delay-500 {
+  animation-delay: 500ms !important;
+}
+
+.animation-delay-600 {
+  animation-delay: 600ms !important;
+}
+
+.animation-delay-700 {
+  animation-delay: 700ms !important;
+}
+
+.animation-delay-800 {
+  animation-delay: 800ms !important;
+}
+
+.animation-delay-900 {
+  animation-delay: 900ms !important;
 }
 
 .animation-delay-1000 {

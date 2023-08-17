@@ -78,11 +78,11 @@ scrollFadeElements.forEach((element) => {
     let tl = gsap.timeline({
         scrollTrigger: {
             trigger: element,
-			start: "top-=30 120px",
-			end: `+=${element.offsetHeight+100}`,
+			start: "top 15px",
+			end: `top -=10`,
             scrub: true,
             toggleActions: "restart none none none",
-            markers: false,
+            markers: true,
         }
     });
 

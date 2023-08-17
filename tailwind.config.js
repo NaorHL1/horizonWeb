@@ -40,6 +40,7 @@ module.exports = {
         fadeIn: "fadeIn 2.2s ease-in both",
         fadeOut: "fadeOut 0.5s forwards",
         fallFromTop: 'fallFromTop 1.2s ease-in-out',
+        slideUp: 'slideUp 1s cubic-bezier(0.65, 0, 0.35, 1) both',
         variants: {
           animation: ["motion-safe"],
           backdropFilter: ['responsive'],
@@ -73,6 +74,10 @@ module.exports = {
         fallFromTop: {
           '0%': { transform: 'translateY(-100%)', opacity: 0 },
           '100%': { transform: 'translateY(0)', opacity: 1 },
+        },
+        slideUp: {
+          '0%': { transform: 'translateY(100px)'},
+          '100%': { transform: 'translateY(0)'},
         },
       },
       colors:{
